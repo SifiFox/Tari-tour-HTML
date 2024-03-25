@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../assets/styles/utils/global.css" >
+    <link rel="stylesheet" href="../../../assets/styles/index.css" >
+    <link rel="stylesheet" href="../../../assets/styles/modules/forms.css" >
+    <link rel="stylesheet" href="../../../assets/styles/modules/profile.css" >
+
+
+    <title>Мой кабинет</title>
+</head>
+<body>
+<div class="wrapper auth-wrapper">
+    <header class="header-wrapper tours-header__wrapper">
+        <div class="header">
+            <div class="header-mobile">
+                <div class="burger-mobile">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+                <div class="logo-mobile">
+                    <a href="#">
+                        <img src="../../../../public/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="phone-mobile">
+                    <img src="../../../../public/phone.svg" alt="">
+                </div>
+            </div>
+
+            <div class="header-head flex-row__center">
+                <div class="logo-wrapper">
+                    <img
+                            class="logo-icon"
+                            alt=""
+                            src="../../../../public/logo.svg"
+                    >
+                    <div class="logo-body">
+                        <b>Авторские</b>
+                        <p class="logo-subtitle">групповые туры по России с 1993 года</p>
+                    </div>
+                </div>
+                <button class="button-outlined">
+                    <img
+                            class="header-icon__map"
+                            alt=""
+                            src="../../../../public/map.svg"
+                    >
+                    <b>Подберите мне тур</b>
+                </button>
+                <div class="header-contacts">
+                    <b class="header-contact">ttour@tari.ru</b>
+                    <b class="header-schedule">Пн - Пт: 09:00 - 19:00</b>
+                </div>
+                <div class="phones-wrapper">
+                    <div class="phones">
+                        <span class="phone">8 800-302-54-91</span>
+                        <span class="phone">+7 495-777-90-15</span>
+                    </div>
+                    <a href="../../register/index.html">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 21.5V19.5C20 17.2909 18.2091 15.5 16 15.5H8C5.79086 15.5 4 17.2909 4 19.5V21.5" stroke="#2f7fed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5Z" stroke="#2f7fed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="./index.html" class="header-menu-item">
+                    <b class="nav-item__title">Туры в Москву </b>
+                    <img
+                            class="arrow-down__icon"
+                            alt=""
+                            src="../../../../public/arrow.svg"
+                    >
+                </a>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Туры в Санкт-петербург </b>
+                    <img
+                            class="arrow-down__icon"
+                            alt=""
+                            src="../../../../public/arrow.svg"
+                    >
+                </div>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Туры По России</b>
+                    <img
+                            class="arrow-down__icon"
+                            alt=""
+                            src="../../../../public/arrow.svg"
+                    >
+                </div>
+                <a href="../../catalog__excursions/index.html" class="header-menu-item">
+                    <b class="nav-item__title">Экскурсии</b>
+                </a>
+                <div class="header-menu-item">
+                    <img
+                            class="feather-icon-calendar"
+                            alt=""
+                            src="../../../../public/calendar.svg"
+                    >
+                    <b class="nav-item__title">Календарь туров</b>
+                </div>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Услуги </b>
+                </div>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">О компании </b>
+                </div>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Контакты </b>
+                </div>
+            </nav>
+            <div class="nav-mobile">
+                <div class="nav-mobile__header">
+                    <div class="nav-mobile__close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="#F7F7FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 6L18 18" stroke="#F7F7FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="nav-mobile__body">
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры в Москву</p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры в Санкт-петербург </p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры в Санкт-петербург </p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры По России </p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Экскурсии </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Календарь  туров </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Услуги </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>О компании  </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Контакты  </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Личный кабинет  </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+
+                </div>
+                <div class="nav-mobile__footer">
+                    <div class="nav-mobile__footer__wrapper">
+                        <div class="nav-mobile__phones">
+                            <p>8 800-302-54-91</p>
+                            <p>+7 495-777-90-15</p>
+                        </div>
+                        <div class="nav-mobile__socials">
+                            <img src="../../../../public/vk_small.png" alt="">
+                            <img src="../../../../public/yt_small.png" alt="">
+                            <img src="../../../../public/tg_small.png" alt="">
+                        </div>
+                        <div class="nav-mobile__mail">
+                            <img src="../../../../public/mail.svg" alt="">
+                            <p>ttour@tari.ru</p>
+                        </div>
+                        <div class="nav-mobile__button">
+                            <button class="button-primary">
+                                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.8335 5.00008V18.3334L7.66683 15.0001L14.3335 18.3334L20.1668 15.0001V1.66675L14.3335 5.00008L7.66683 1.66675L1.8335 5.00008V5.00008Z" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.6665 1.66675V15.0001" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.3335 5V18.3333" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                                <b class="button3">Подберите мне тур</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="profile">
+        <div class="profile-wrapper">
+             <div class="profile-head">
+                 <h1 class="profile-title">Мой кабинет</h1>
+                 <div class="nav-tabs">
+                     <a href="./index.html" class="nav-item nav-tab__active">
+                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M20 21.5V19.5C20 17.2909 18.2091 15.5 16 15.5H8C5.79086 15.5 4 17.2909 4 19.5V21.5" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5Z" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                         </svg>
+                         <span class="nav-item__desc">профиль пользователя</span>
+                     </a>
+                     <a href="../orders-profile/index.html" class="nav-item">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M6.66797 5H17.5013" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                             <path d="M6.66797 10H17.5013" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                             <path d="M6.66797 15H17.5013" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                             <path d="M3.33203 5H2.4987" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                             <path d="M3.33203 10H2.4987" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                             <path d="M3.33203 15H2.4987" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                         </svg>
+                         <span class="nav-item__desc">Список заказов</span>
+                     </a>
+                 </div>
+                 <div class="nav-item profile-exit">
+                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M8.33333 18.3334H4.16667C3.24619 18.3334 2.5 17.5872 2.5 16.6667V3.33341C2.5 2.41294 3.24619 1.66675 4.16667 1.66675H8.33333" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                         <path d="M14.168 13.3334L17.5013 10.0001L14.168 6.66675" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                         <path d="M17.5 10H7.5" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     </svg>
+                     <span class="nav-item__desc">Выход</span>
+                 </div>
+             </div>
+            <div class="profile-form__wrapper">
+                <form action="">
+                    <div class="form-section">
+                        <div class="load-avatar">
+                            <div class="avatar">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 21.5V19.5C20 17.2909 18.2091 15.5 16 15.5H8C5.79086 15.5 4 17.2909 4 19.5V21.5" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5Z" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            </div>
+                            <div class="avatar-controls">
+                                <input id="avatar" type="file">
+                                <label class="file-input__label" for="avatar">
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.1654 16.3333C20.1654 17.2538 19.4192 18 18.4987 18H3.4987C2.57822 18 1.83203 17.2538 1.83203 16.3333V7.16667C1.83203 6.24619 2.57822 5.5 3.4987 5.5H6.83203L8.4987 3H13.4987L15.1654 5.5H18.4987C19.4192 5.5 20.1654 6.24619 20.1654 7.16667V16.3333Z" stroke="#6E7191" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0013 14.6667C12.8423 14.6667 14.3346 13.1743 14.3346 11.3333C14.3346 9.49238 12.8423 8 11.0013 8C9.16035 8 7.66797 9.49238 7.66797 11.3333C7.66797 13.1743 9.16035 14.6667 11.0013 14.6667Z" stroke="#6E7191" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Загрузить фото
+                                </label>
+                                <p class="file-input__label__text">*Image size should be at least 320px big, and less than 500kb. Allowed files .png and .jpg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <p class="form-section__title">Личные данные</p>
+                        <div class="form__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.3335 4.5H20.3335C21.4335 4.5 22.3335 5.4 22.3335 6.5V18.5C22.3335 19.6 21.4335 20.5 20.3335 20.5H4.3335C3.2335 20.5 2.3335 19.6 2.3335 18.5V6.5C2.3335 5.4 3.2335 4.5 4.3335 4.5Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.3335 6.5L12.3335 13.5L2.3335 6.5" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                            <div class="form-item__body">
+                                <label for="email" class="form-item__label">Введите ваш E-mail</label>
+                                <input
+                                        id="email"
+                                        class="form-item__input"
+                                        placeholder="email"
+                                        type="text">
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8881 16.9201V19.9201C21.8904 20.4832 21.6552 21.0213 21.2402 21.402C20.8252 21.7827 20.269 21.9708 19.7081 21.9201C16.631 21.5857 13.6751 20.5342 11.0781 18.8501C8.66195 17.3148 6.61346 15.2663 5.07812 12.8501C3.3881 10.2413 2.33637 7.27109 2.00812 4.1801C1.9576 3.62097 2.1444 3.06635 2.52289 2.65172C2.90138 2.23709 3.43672 2.00063 3.99812 2.0001H6.99812C8.00199 1.99022 8.85762 2.72607 8.99812 3.7201C9.12475 4.68016 9.35957 5.62283 9.69812 6.5301C9.97286 7.26097 9.79714 8.0849 9.24812 8.6401L7.97812 9.9101C9.40168 12.4136 11.4746 14.4865 13.9781 15.9101L15.2481 14.6401C15.8033 14.0911 16.6272 13.9154 17.3581 14.1901C18.2654 14.5286 19.2081 14.7635 20.1681 14.8901C21.1737 15.032 21.9133 15.9049 21.8881 16.9201Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                            <div class="form-item__body">
+                                <label for="phone" class="form-item__label">Введите номер телефона</label>
+                                <input
+                                        id="phone"
+                                        class="form-item__input"
+                                        placeholder="+7(xxx)xxx-xx-xx"
+                                        type="text">
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 9C2 7.89543 2.89543 7 4 7H20C21.1046 7 22 7.89543 22 9V19C22 20.1046 21.1046 21 20 21H4C2.89543 21 2 20.1046 2 19V9Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 21V5C16 3.89543 15.1046 3 14 3H10C8.89543 3 8 3.89543 8 5V21" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="form-item__body">
+                                <label for="inn" class="form-item__label">Ваш ИНН</label>
+                                <input
+                                        id="inn"
+                                        class="form-item__input"
+                                        placeholder="424654745373455"
+                                        type="text">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-section">
+                        <p class="form-section__title">Пароль пользователя</p>
+                        <div class="form-section__row">
+                            <div class="form__item form__item__hidden">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 13C3 11.8954 3.89543 11 5 11H19C20.1046 11 21 11.8954 21 13V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V13Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 11V7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7V11" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <div class="form-item__body">
+                                    <label for="password" class="form-item__label">Введите пароль</label>
+                                    <input
+                                            id="password"
+                                            class="form-item__input"
+                                            placeholder="******************"
+                                            type="password">
+                                </div>
+                                <div class="icon-hide">
+                                    <img class="eye-hide icon-hide__image icon-active"  src="../../../../public/eye-off.svg" alt="">
+                                    <img class="eye-show icon-hide__image" src="../../../../public/eye.svg" alt="">
+                                </div>
+
+                            </div>
+                            <div class="form__item form__item__hidden">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 13C3 11.8954 3.89543 11 5 11H19C20.1046 11 21 11.8954 21 13V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V13Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 11V7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7V11" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <div class="form-item__body">
+                                    <label for="passwordConfirm" class="form-item__label">Повторите пароль</label>
+                                    <input
+                                            id="passwordConfirm"
+                                            class="form-item__input"
+                                            placeholder="******************"
+                                            type="password">
+                                </div>
+                                <div class="icon-hide">
+                                    <img class="eye-hide icon-hide__image icon-active"  src="../../../../public/eye-off.svg" alt="">
+                                    <img class="eye-show icon-hide__image" src="../../../../public/eye.svg" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <button type="submit" class="button-primary profile-button">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.1654 5.83325L7.9987 14.9999L3.83203 10.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Сохранить</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-subscribe">
+            <div class="subscribe-title">
+                <h3 class="subscribe-heading3">Будьте в курсе !</h3>
+                <p>Подпишитесь! Подарки, скидки, розыгрыши
+                    призов, новые экскурсии, туры!</p>
+            </div>
+            <div class="subscribe-action">
+                <div class="input-block">
+                    <div class="input-block__icon">
+                        <img src="../../../../public/mail.svg" alt="">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="subscribe">E-mail</label>
+                        <input id="subscribe" name="nameInput" type="text">
+                    </div>
+                </div>
+                <button class="button-secondary"><b class="button3">Подписаться</b></button>
+            </div>
+
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-list footer-head">
+                <div class="footer-logo">
+                    <div class="footer-logo__image">
+                        <img src="../../../../public/logo_invert.svg" alt="">
+                    </div>
+                    <div class="footer-logo__desc">
+                        <b class="logo-desc__title">Работаем с 1993 года</b>
+                        <p class="logo-desc__subtitle">ООО "Компания Тари Тур"
+                            117449 г. Москва ул. Винокурова, 2</p>
+                    </div>
+                </div>
+                <div class="footer-socials">
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="../../../../public/vk_small.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="../../../../public/yt_small.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="../../../../public/tg_small.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-mail">
+                    <a class="footer-main__link" href="mailto:testmail@gmail.com">
+                        <img src="../../../../public/mail.svg" alt="">
+                        <b>ttour@tari.ru</b>
+                    </a>
+                </div>
+                <div class="footer-phones">
+                    <span class="phone">8 800-302-54-91</span>
+                    <span class="phone">+7 495-777-90-15</span>
+                </div>
+            </div>
+            <div class="footer-list footer-body">
+                <div class="footer-body__content">
+                    <div class="footer-body__group">
+                        <p class="footer-body__title footer-body__title__opened">Туры в Москву </p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">Туры в Санкт-петербург</a></li>
+                            <li class="group-list__item"><a href="#">Все туры</a></li>
+                            <li class="group-list__item"><a href="#">Экскурсии</a></li>
+                            <li class="group-list__item"><a href="#">Календарь туров</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-body__group">
+                        <p class="footer-body__title">Услуги</p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">О компании</a></li>
+                            <li class="group-list__item"><a href="#">Контакты</a></li>
+                            <li class="group-list__item"><a href="#">Отели</a></li>
+                            <li class="group-list__item"><a href="#">Подарочный сертификат</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-body__group">
+                        <p class="footer-body__title">Туристам</p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">Договор с туристом</a></li>
+                            <li class="group-list__item"><a href="#">Как купить тур</a></li>
+                            <li class="group-list__item"><a href="#">Блог</a></li>
+                            <li class="group-list__item"><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-body__group">
+                        <p class="footer-body__title">Агентствам</p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">Образцы договоров</a></li>
+                            <li class="group-list__item"><a href="#">Вебинары</a></li>
+                            <li class="group-list__item"><a href="#">Условия сотрудничества</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-list footer-docs">
+                <a href="#" class="footer-docs__link">Пользовательское соглашение</a>
+                <a href="#" class="footer-docs__link">Политика конфиденциальности</a>
+                <a href="#" class="footer-docs__link">Разработка - Сайткрафт</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/styles/utils/global.css" >
+    <link rel="stylesheet" href="../../assets/styles/index.css" >
+    <link rel="stylesheet" href="../../assets/styles/modules/tours.css" >
+    <link rel="stylesheet" href="../../assets/styles/modules/info.css" >
+    <link rel="stylesheet" href="../../assets/styles/modules/contacts.css" >
+    <title>Контакты</title>
+</head>
+<body>
+<div class="wrapper tours-wrapper">
+    <header class="header-wrapper tours-header__wrapper">
+        <div class="header">
+            <div class="header-mobile">
+                <div class="burger-mobile">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+                <div class="logo-mobile">
+                    <a href="#">
+                        <img src="../../../public/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="phone-mobile">
+                    <img src="../../../public/phone.svg" alt="">
+                </div>
+            </div>
+
+            <div class="header-head flex-row__center">
+                <div class="logo-wrapper">
+                    <img
+                            class="logo-icon"
+                            alt=""
+                            src="../../../public/logo.svg"
+                    >
+                    <div class="logo-body">
+                        <b>Авторские</b>
+                        <p class="logo-subtitle">групповые туры по России с 1993 года</p>
+                    </div>
+                </div>
+                <button class="button-outlined">
+                    <img
+                            class="header-icon__map"
+                            alt=""
+                            src="../../../public/map.svg"
+                    >
+                    <b>Подберите мне тур</b>
+                </button>
+                <div class="header-contacts">
+                    <b class="header-contact">ttour@tari.ru</b>
+                    <b class="header-schedule">Пн - Пт: 09:00 - 19:00</b>
+                </div>
+                <div class="phones-wrapper">
+                    <div class="phones">
+                        <span class="phone">8 800-302-54-91</span>
+                        <span class="phone">+7 495-777-90-15</span>
+                    </div>
+                    <img
+                            class="feather-icon-user"
+                            alt=""
+                            src="../../../public/feathericon--user.svg"
+                    >
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="../catalog__tours/index.html" class="header-menu-item ">
+                    <b class="nav-item__title">Туры в Москву </b>
+                    <img
+                            class="arrow-down__icon"
+                            alt=""
+                            src="../../../public/arrow.svg"
+                    >
+                </a>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Туры в Санкт-петербург </b>
+                    <img
+                            class="arrow-down__icon"
+                            alt=""
+                            src="../../../public/arrow.svg"
+                    >
+                </div>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Туры По России</b>
+                    <img
+                            class="arrow-down__icon"
+                            alt=""
+                            src="../../../public/arrow.svg"
+                    >
+                </div>
+                <a href="#" class="header-menu-item ">
+                    <b class="nav-item__title">Экскурсии</b>
+                </a>
+                <div class="header-menu-item">
+                    <img
+                            class="feather-icon-calendar"
+                            alt=""
+                            src="../../../public/calendar.svg"
+                    >
+                    <b class="nav-item__title">Календарь туров</b>
+                </div>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Услуги </b>
+                </div>
+                <a href="#" class="header-menu-item header-menu-item__active">
+                    <b class="nav-item__title">О компании </b>
+                </a>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Контакты </b>
+                </div>
+            </nav>
+
+            <div class="nav-mobile">
+                <div class="nav-mobile__header">
+                    <div class="nav-mobile__close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="#F7F7FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 6L18 18" stroke="#F7F7FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="nav-mobile__body">
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры в Москву</p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры в Санкт-петербург </p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры в Санкт-петербург </p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры По России </p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Экскурсии </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Календарь  туров </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Услуги </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>О компании  </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Контакты  </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Личный кабинет  </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+
+                </div>
+                <div class="nav-mobile__footer">
+                    <div class="nav-mobile__footer__wrapper">
+                        <div class="nav-mobile__phones">
+                            <p>8 800-302-54-91</p>
+                            <p>+7 495-777-90-15</p>
+                        </div>
+                        <div class="nav-mobile__socials">
+                            <img src="../../../public/vk_small.png" alt="">
+                            <img src="../../../public/yt_small.png" alt="">
+                            <img src="../../../public/tg_small.png" alt="">
+                        </div>
+                        <div class="nav-mobile__mail">
+                            <img src="../../../public/mail.svg" alt="">
+                            <p>ttour@tari.ru</p>
+                        </div>
+                        <div class="nav-mobile__button">
+                            <button class="button-primary">
+                                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.8335 5.00008V18.3334L7.66683 15.0001L14.3335 18.3334L20.1668 15.0001V1.66675L14.3335 5.00008L7.66683 1.66675L1.8335 5.00008V5.00008Z" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.6665 1.66675V15.0001" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.3335 5V18.3333" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                                <b class="button3">Подберите мне тур</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="tours-banner info-banner">
+        <div class="tours-banner__wrapper">
+            <div class="tours-banner__breadcrumbs">
+                <a href="#" class="breadcrumb">Главная</a>
+                <span class="breadcrumb-separator">—</span>
+                <a href="#" class="breadcrumb">О компании</a>
+                <span class="breadcrumb-separator">—</span>
+                <a href="#" class="breadcrumb">Контакты</a>
+            </div>
+            <h1 class="tours-banner__title">Контакты</h1>
+
+        </div>
+    </div>
+
+    <section class="contacts">
+        <div class="contacts-wrapper">
+            <div class="contacts-items">
+                <div class="contact">
+                    <div class="contact-info">
+                        <h3 class="contact-title">Москва</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10V10Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <p>Россия, 117449, г. Москва, ул. Винокурова, 2</p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35742 5.33325C3.35742 4.22868 4.25285 3.33325 5.35742 3.33325H16.3574C17.462 3.33325 18.3574 4.22868 18.3574 5.33325V16.3333C18.3574 17.4378 17.462 18.3333 16.3574 18.3333H5.35742C4.25285 18.3333 3.35742 17.4378 3.35742 16.3333V5.33325Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14.1909 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.52393 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3.35742 8.33325H18.3574" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <p>09:00 - 19:00 (пн-пт); воскресенье - выходной.</p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.3335 4.5H20.3335C21.4335 4.5 22.3335 5.4 22.3335 6.5V18.5C22.3335 19.6 21.4335 20.5 20.3335 20.5H4.3335C3.2335 20.5 2.3335 19.6 2.3335 18.5V6.5C2.3335 5.4 3.2335 4.5 4.3335 4.5Z" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M22.3335 6.5L12.3335 13.5L2.3335 6.5" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <a href="mailto:levmar@tari_ru">levmar@tari_ru</a>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8881 16.9201V19.9201C21.8904 20.4832 21.6552 21.0213 21.2402 21.402C20.8252 21.7827 20.269 21.9708 19.7081 21.9201C16.631 21.5857 13.6751 20.5342 11.0781 18.8501C8.66195 17.3148 6.61346 15.2663 5.07812 12.8501C3.3881 10.2413 2.33637 7.27109 2.00812 4.1801C1.9576 3.62097 2.1444 3.06635 2.52289 2.65172C2.90138 2.23709 3.43672 2.00063 3.99812 2.0001H6.99812C8.00199 1.99022 8.85762 2.72607 8.99812 3.7201C9.12475 4.68016 9.35957 5.62283 9.69812 6.5301C9.97286 7.26097 9.79714 8.0849 9.24812 8.6401L7.97812 9.9101C9.40168 12.4136 11.4746 14.4865 13.9781 15.9101L15.2481 14.6401C15.8033 14.0911 16.6272 13.9154 17.3581 14.1901C18.2654 14.5286 19.2081 14.7635 20.1681 14.8901C21.1737 15.032 21.9133 15.9049 21.8881 16.9201Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <p>+7 495 777 90 15</p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-social"><img src="../../../public/vk.png" alt=""></div>
+                                <div class="contact-social"><img src="../../../public/tg.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe src="https://yandex.by/map-widget/v1/?ll=37.580840%2C55.689999&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjY3MzA0MBI-0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINGD0LvQuNGG0LAg0JLQuNC90L7QutGD0YDQvtCy0LAsIDIiCg3HUhZCFY_CXkI%2C&z=17.11" allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contact-info">
+                        <h3 class="contact-title">Санкт-Петербург</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10V10Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <p>Россия, 191023, Санкт-Петербург, набережная реки Фонтанки, 59</p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35742 5.33325C3.35742 4.22868 4.25285 3.33325 5.35742 3.33325H16.3574C17.462 3.33325 18.3574 4.22868 18.3574 5.33325V16.3333C18.3574 17.4378 17.462 18.3333 16.3574 18.3333H5.35742C4.25285 18.3333 3.35742 17.4378 3.35742 16.3333V5.33325Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14.1909 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.52393 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3.35742 8.33325H18.3574" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <p>09:00 - 19:00 (пн-пт); воскресенье - выходной.</p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.3335 4.5H20.3335C21.4335 4.5 22.3335 5.4 22.3335 6.5V18.5C22.3335 19.6 21.4335 20.5 20.3335 20.5H4.3335C3.2335 20.5 2.3335 19.6 2.3335 18.5V6.5C2.3335 5.4 3.2335 4.5 4.3335 4.5Z" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M22.3335 6.5L12.3335 13.5L2.3335 6.5" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <a href="mailto:tari@tarispb_ru">tari@tarispb_ru</a>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8881 16.9201V19.9201C21.8904 20.4832 21.6552 21.0213 21.2402 21.402C20.8252 21.7827 20.269 21.9708 19.7081 21.9201C16.631 21.5857 13.6751 20.5342 11.0781 18.8501C8.66195 17.3148 6.61346 15.2663 5.07812 12.8501C3.3881 10.2413 2.33637 7.27109 2.00812 4.1801C1.9576 3.62097 2.1444 3.06635 2.52289 2.65172C2.90138 2.23709 3.43672 2.00063 3.99812 2.0001H6.99812C8.00199 1.99022 8.85762 2.72607 8.99812 3.7201C9.12475 4.68016 9.35957 5.62283 9.69812 6.5301C9.97286 7.26097 9.79714 8.0849 9.24812 8.6401L7.97812 9.9101C9.40168 12.4136 11.4746 14.4865 13.9781 15.9101L15.2481 14.6401C15.8033 14.0911 16.6272 13.9154 17.3581 14.1901C18.2654 14.5286 19.2081 14.7635 20.1681 14.8901C21.1737 15.032 21.9133 15.9049 21.8881 16.9201Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <p>+7 495 777 90 15</p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-social"><img src="../../../public/vk.png" alt=""></div>
+                                <div class="contact-social"><img src="../../../public/tg.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe src="https://yandex.by/map-widget/v1/?ll=37.580840%2C55.689999&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjY3MzA0MBI-0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINGD0LvQuNGG0LAg0JLQuNC90L7QutGD0YDQvtCy0LAsIDIiCg3HUhZCFY_CXkI%2C&z=17.11" allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts-questions contact-block">
+                <h3 class="contact-block__title">
+                    Часто задаваемые вопросы
+                </h3>
+                <div class="questions">
+                    <div class="question question-active">
+                        <div class="question-icon">?</div>
+                        <div class="question-body">
+                            <p class="question-title">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            </p>
+                            <p class="question-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            </p>
+                        </div>
+                        <div class="question-open"></div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-icon">?</div>
+                        <div class="question-body">
+                            <p class="question-title">
+                                Как оплатить тур?
+                            </p>
+                            <p class="question-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            </p>
+                        </div>
+                        <div class="question-open"></div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-icon">?</div>
+                        <div class="question-body">
+                            <p class="question-title">
+                                Как выбрать тур?
+                            </p>
+                            <p class="question-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            </p>
+                        </div>
+                        <div class="question-open"></div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-icon">?</div>
+                        <div class="question-body">
+                            <p class="question-title">
+                                Мне нужен тур с перелетом из моего города
+                            </p>
+                            <p class="question-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            </p>
+                        </div>
+                        <div class="question-open"></div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-icon">?</div>
+                        <div class="question-body">
+                            <p class="question-title">
+                                Вы посредник? Берете ли вы коммиссию?
+                            </p>
+                            <p class="question-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            </p>
+                        </div>
+                        <div class="question-open"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="contacts-emplyees contact-block">
+                <h3 class="contact-block__title">
+                    Наши сотрудники
+                </h3>
+                <div class="employees">
+                    <div class="swiper employee-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="employees-item swiper-slide">
+                                <div class="avatar">
+                                    <img src="../../../public/employee.png" alt="">
+                                </div>
+                                <h4 class="employee-title">Иван иванов</h4>
+                                <p class="employee-subtitle">Специалист отдела продаж</p>
+                                <div class="employee-contacts">
+                                    <div class="employee-contact">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.3335 4.5H20.3335C21.4335 4.5 22.3335 5.4 22.3335 6.5V18.5C22.3335 19.6 21.4335 20.5 20.3335 20.5H4.3335C3.2335 20.5 2.3335 19.6 2.3335 18.5V6.5C2.3335 5.4 3.2335 4.5 4.3335 4.5Z" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22.3335 6.5L12.3335 13.5L2.3335 6.5" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <a href="mailto:tari@tarispb_ru">tari@tarispb_ru</a>
+                                    </div>
+                                    <div class="employee-contact">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8881 16.9201V19.9201C21.8904 20.4832 21.6552 21.0213 21.2402 21.402C20.8252 21.7827 20.269 21.9708 19.7081 21.9201C16.631 21.5857 13.6751 20.5342 11.0781 18.8501C8.66195 17.3148 6.61346 15.2663 5.07812 12.8501C3.3881 10.2413 2.33637 7.27109 2.00812 4.1801C1.9576 3.62097 2.1444 3.06635 2.52289 2.65172C2.90138 2.23709 3.43672 2.00063 3.99812 2.0001H6.99812C8.00199 1.99022 8.85762 2.72607 8.99812 3.7201C9.12475 4.68016 9.35957 5.62283 9.69812 6.5301C9.97286 7.26097 9.79714 8.0849 9.24812 8.6401L7.97812 9.9101C9.40168 12.4136 11.4746 14.4865 13.9781 15.9101L15.2481 14.6401C15.8033 14.0911 16.6272 13.9154 17.3581 14.1901C18.2654 14.5286 19.2081 14.7635 20.1681 14.8901C21.1737 15.032 21.9133 15.9049 21.8881 16.9201Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>+7 (812) 337-55-37</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employees-item swiper-slide">
+                                <div class="avatar">
+                                    <img src="../../../public/employee.png" alt="">
+                                </div>
+                                <h4 class="employee-title">Иван иванов</h4>
+                                <p class="employee-subtitle">Специалист отдела продаж</p>
+                                <div class="employee-contacts">
+                                    <div class="employee-contact">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.3335 4.5H20.3335C21.4335 4.5 22.3335 5.4 22.3335 6.5V18.5C22.3335 19.6 21.4335 20.5 20.3335 20.5H4.3335C3.2335 20.5 2.3335 19.6 2.3335 18.5V6.5C2.3335 5.4 3.2335 4.5 4.3335 4.5Z" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22.3335 6.5L12.3335 13.5L2.3335 6.5" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <a href="mailto:tari@tarispb_ru">tari@tarispb_ru</a>
+                                    </div>
+                                    <div class="employee-contact">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8881 16.9201V19.9201C21.8904 20.4832 21.6552 21.0213 21.2402 21.402C20.8252 21.7827 20.269 21.9708 19.7081 21.9201C16.631 21.5857 13.6751 20.5342 11.0781 18.8501C8.66195 17.3148 6.61346 15.2663 5.07812 12.8501C3.3881 10.2413 2.33637 7.27109 2.00812 4.1801C1.9576 3.62097 2.1444 3.06635 2.52289 2.65172C2.90138 2.23709 3.43672 2.00063 3.99812 2.0001H6.99812C8.00199 1.99022 8.85762 2.72607 8.99812 3.7201C9.12475 4.68016 9.35957 5.62283 9.69812 6.5301C9.97286 7.26097 9.79714 8.0849 9.24812 8.6401L7.97812 9.9101C9.40168 12.4136 11.4746 14.4865 13.9781 15.9101L15.2481 14.6401C15.8033 14.0911 16.6272 13.9154 17.3581 14.1901C18.2654 14.5286 19.2081 14.7635 20.1681 14.8901C21.1737 15.032 21.9133 15.9049 21.8881 16.9201Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>+7 (812) 337-55-37</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employees-item swiper-slide">
+                                <div class="avatar">
+                                    <img src="../../../public/employee.png" alt="">
+                                </div>
+                                <h4 class="employee-title">Иван иванов</h4>
+                                <p class="employee-subtitle">Специалист отдела продаж</p>
+                                <div class="employee-contacts">
+                                    <div class="employee-contact">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.3335 4.5H20.3335C21.4335 4.5 22.3335 5.4 22.3335 6.5V18.5C22.3335 19.6 21.4335 20.5 20.3335 20.5H4.3335C3.2335 20.5 2.3335 19.6 2.3335 18.5V6.5C2.3335 5.4 3.2335 4.5 4.3335 4.5Z" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22.3335 6.5L12.3335 13.5L2.3335 6.5" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <a href="mailto:tari@tarispb_ru">tari@tarispb_ru</a>
+                                    </div>
+                                    <div class="employee-contact">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8881 16.9201V19.9201C21.8904 20.4832 21.6552 21.0213 21.2402 21.402C20.8252 21.7827 20.269 21.9708 19.7081 21.9201C16.631 21.5857 13.6751 20.5342 11.0781 18.8501C8.66195 17.3148 6.61346 15.2663 5.07812 12.8501C3.3881 10.2413 2.33637 7.27109 2.00812 4.1801C1.9576 3.62097 2.1444 3.06635 2.52289 2.65172C2.90138 2.23709 3.43672 2.00063 3.99812 2.0001H6.99812C8.00199 1.99022 8.85762 2.72607 8.99812 3.7201C9.12475 4.68016 9.35957 5.62283 9.69812 6.5301C9.97286 7.26097 9.79714 8.0849 9.24812 8.6401L7.97812 9.9101C9.40168 12.4136 11.4746 14.4865 13.9781 15.9101L15.2481 14.6401C15.8033 14.0911 16.6272 13.9154 17.3581 14.1901C18.2654 14.5286 19.2081 14.7635 20.1681 14.8901C21.1737 15.032 21.9133 15.9049 21.8881 16.9201Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>+7 (812) 337-55-37</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employees-item swiper-slide">
+                                <div class="avatar">
+                                    <img src="../../../public/employee.png" alt="">
+                                </div>
+                                <h4 class="employee-title">Иван иванов</h4>
+                                <p class="employee-subtitle">Специалист отдела продаж</p>
+                                <div class="employee-contacts">
+                                    <div class="employee-contact">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.3335 4.5H20.3335C21.4335 4.5 22.3335 5.4 22.3335 6.5V18.5C22.3335 19.6 21.4335 20.5 20.3335 20.5H4.3335C3.2335 20.5 2.3335 19.6 2.3335 18.5V6.5C2.3335 5.4 3.2335 4.5 4.3335 4.5Z" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22.3335 6.5L12.3335 13.5L2.3335 6.5" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <a href="mailto:tari@tarispb_ru">tari@tarispb_ru</a>
+                                    </div>
+                                    <div class="employee-contact">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8881 16.9201V19.9201C21.8904 20.4832 21.6552 21.0213 21.2402 21.402C20.8252 21.7827 20.269 21.9708 19.7081 21.9201C16.631 21.5857 13.6751 20.5342 11.0781 18.8501C8.66195 17.3148 6.61346 15.2663 5.07812 12.8501C3.3881 10.2413 2.33637 7.27109 2.00812 4.1801C1.9576 3.62097 2.1444 3.06635 2.52289 2.65172C2.90138 2.23709 3.43672 2.00063 3.99812 2.0001H6.99812C8.00199 1.99022 8.85762 2.72607 8.99812 3.7201C9.12475 4.68016 9.35957 5.62283 9.69812 6.5301C9.97286 7.26097 9.79714 8.0849 9.24812 8.6401L7.97812 9.9101C9.40168 12.4136 11.4746 14.4865 13.9781 15.9101L15.2481 14.6401C15.8033 14.0911 16.6272 13.9154 17.3581 14.1901C18.2654 14.5286 19.2081 14.7635 20.1681 14.8901C21.1737 15.032 21.9133 15.9049 21.8881 16.9201Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>+7 (812) 337-55-37</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employees-item swiper-slide">
+                                <div class="avatar">
+                                    <img src="../../../public/employee.png" alt="">
+                                </div>
+                                <h4 class="employee-title">Иван иванов</h4>
+                                <p class="employee-subtitle">Специалист отдела продаж</p>
+                                <div class="employee-contacts">
+                                    <div class="employee-contact">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.3335 4.5H20.3335C21.4335 4.5 22.3335 5.4 22.3335 6.5V18.5C22.3335 19.6 21.4335 20.5 20.3335 20.5H4.3335C3.2335 20.5 2.3335 19.6 2.3335 18.5V6.5C2.3335 5.4 3.2335 4.5 4.3335 4.5Z" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22.3335 6.5L12.3335 13.5L2.3335 6.5" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <a href="mailto:tari@tarispb_ru">tari@tarispb_ru</a>
+                                    </div>
+                                    <div class="employee-contact">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8881 16.9201V19.9201C21.8904 20.4832 21.6552 21.0213 21.2402 21.402C20.8252 21.7827 20.269 21.9708 19.7081 21.9201C16.631 21.5857 13.6751 20.5342 11.0781 18.8501C8.66195 17.3148 6.61346 15.2663 5.07812 12.8501C3.3881 10.2413 2.33637 7.27109 2.00812 4.1801C1.9576 3.62097 2.1444 3.06635 2.52289 2.65172C2.90138 2.23709 3.43672 2.00063 3.99812 2.0001H6.99812C8.00199 1.99022 8.85762 2.72607 8.99812 3.7201C9.12475 4.68016 9.35957 5.62283 9.69812 6.5301C9.97286 7.26097 9.79714 8.0849 9.24812 8.6401L7.97812 9.9101C9.40168 12.4136 11.4746 14.4865 13.9781 15.9101L15.2481 14.6401C15.8033 14.0911 16.6272 13.9154 17.3581 14.1901C18.2654 14.5286 19.2081 14.7635 20.1681 14.8901C21.1737 15.032 21.9133 15.9049 21.8881 16.9201Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>+7 (812) 337-55-37</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employees-item swiper-slide">
+                                <div class="avatar">
+                                    <img src="../../../public/employee.png" alt="">
+                                </div>
+                                <h4 class="employee-title">Иван иванов</h4>
+                                <p class="employee-subtitle">Специалист отдела продаж</p>
+                                <div class="employee-contacts">
+                                    <div class="employee-contact">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.3335 4.5H20.3335C21.4335 4.5 22.3335 5.4 22.3335 6.5V18.5C22.3335 19.6 21.4335 20.5 20.3335 20.5H4.3335C3.2335 20.5 2.3335 19.6 2.3335 18.5V6.5C2.3335 5.4 3.2335 4.5 4.3335 4.5Z" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22.3335 6.5L12.3335 13.5L2.3335 6.5" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <a href="mailto:tari@tarispb_ru">tari@tarispb_ru</a>
+                                    </div>
+                                    <div class="employee-contact">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8881 16.9201V19.9201C21.8904 20.4832 21.6552 21.0213 21.2402 21.402C20.8252 21.7827 20.269 21.9708 19.7081 21.9201C16.631 21.5857 13.6751 20.5342 11.0781 18.8501C8.66195 17.3148 6.61346 15.2663 5.07812 12.8501C3.3881 10.2413 2.33637 7.27109 2.00812 4.1801C1.9576 3.62097 2.1444 3.06635 2.52289 2.65172C2.90138 2.23709 3.43672 2.00063 3.99812 2.0001H6.99812C8.00199 1.99022 8.85762 2.72607 8.99812 3.7201C9.12475 4.68016 9.35957 5.62283 9.69812 6.5301C9.97286 7.26097 9.79714 8.0849 9.24812 8.6401L7.97812 9.9101C9.40168 12.4136 11.4746 14.4865 13.9781 15.9101L15.2481 14.6401C15.8033 14.0911 16.6272 13.9154 17.3581 14.1901C18.2654 14.5286 19.2081 14.7635 20.1681 14.8901C21.1737 15.032 21.9133 15.9049 21.8881 16.9201Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>+7 (812) 337-55-37</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employees-item swiper-slide">
+                                <div class="avatar">
+                                    <img src="../../../public/employee.png" alt="">
+                                </div>
+                                <h4 class="employee-title">Иван иванов</h4>
+                                <p class="employee-subtitle">Специалист отдела продаж</p>
+                                <div class="employee-contacts">
+                                    <div class="employee-contact">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.3335 4.5H20.3335C21.4335 4.5 22.3335 5.4 22.3335 6.5V18.5C22.3335 19.6 21.4335 20.5 20.3335 20.5H4.3335C3.2335 20.5 2.3335 19.6 2.3335 18.5V6.5C2.3335 5.4 3.2335 4.5 4.3335 4.5Z" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22.3335 6.5L12.3335 13.5L2.3335 6.5" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <a href="mailto:tari@tarispb_ru">tari@tarispb_ru</a>
+                                    </div>
+                                    <div class="employee-contact">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8881 16.9201V19.9201C21.8904 20.4832 21.6552 21.0213 21.2402 21.402C20.8252 21.7827 20.269 21.9708 19.7081 21.9201C16.631 21.5857 13.6751 20.5342 11.0781 18.8501C8.66195 17.3148 6.61346 15.2663 5.07812 12.8501C3.3881 10.2413 2.33637 7.27109 2.00812 4.1801C1.9576 3.62097 2.1444 3.06635 2.52289 2.65172C2.90138 2.23709 3.43672 2.00063 3.99812 2.0001H6.99812C8.00199 1.99022 8.85762 2.72607 8.99812 3.7201C9.12475 4.68016 9.35957 5.62283 9.69812 6.5301C9.97286 7.26097 9.79714 8.0849 9.24812 8.6401L7.97812 9.9101C9.40168 12.4136 11.4746 14.4865 13.9781 15.9101L15.2481 14.6401C15.8033 14.0911 16.6272 13.9154 17.3581 14.1901C18.2654 14.5286 19.2081 14.7635 20.1681 14.8901C21.1737 15.032 21.9133 15.9049 21.8881 16.9201Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>+7 (812) 337-55-37</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employees-item swiper-slide">
+                                <div class="avatar">
+                                    <img src="../../../public/employee.png" alt="">
+                                </div>
+                                <h4 class="employee-title">Иван иванов</h4>
+                                <p class="employee-subtitle">Специалист отдела продаж</p>
+                                <div class="employee-contacts">
+                                    <div class="employee-contact">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.3335 4.5H20.3335C21.4335 4.5 22.3335 5.4 22.3335 6.5V18.5C22.3335 19.6 21.4335 20.5 20.3335 20.5H4.3335C3.2335 20.5 2.3335 19.6 2.3335 18.5V6.5C2.3335 5.4 3.2335 4.5 4.3335 4.5Z" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22.3335 6.5L12.3335 13.5L2.3335 6.5" stroke="#D6D8E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <a href="mailto:tari@tarispb_ru">tari@tarispb_ru</a>
+                                    </div>
+                                    <div class="employee-contact">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8881 16.9201V19.9201C21.8904 20.4832 21.6552 21.0213 21.2402 21.402C20.8252 21.7827 20.269 21.9708 19.7081 21.9201C16.631 21.5857 13.6751 20.5342 11.0781 18.8501C8.66195 17.3148 6.61346 15.2663 5.07812 12.8501C3.3881 10.2413 2.33637 7.27109 2.00812 4.1801C1.9576 3.62097 2.1444 3.06635 2.52289 2.65172C2.90138 2.23709 3.43672 2.00063 3.99812 2.0001H6.99812C8.00199 1.99022 8.85762 2.72607 8.99812 3.7201C9.12475 4.68016 9.35957 5.62283 9.69812 6.5301C9.97286 7.26097 9.79714 8.0849 9.24812 8.6401L7.97812 9.9101C9.40168 12.4136 11.4746 14.4865 13.9781 15.9101L15.2481 14.6401C15.8033 14.0911 16.6272 13.9154 17.3581 14.1901C18.2654 14.5286 19.2081 14.7635 20.1681 14.8901C21.1737 15.032 21.9133 15.9049 21.8881 16.9201Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>+7 (812) 337-55-37</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employee-pagination swiper-pagination swiper-pagination__default"></div>
+                </div>
+
+            </div>
+            <div class="contacts-requisites contact-block">
+                <div class="requisites-wrapper">
+                    <div class="requisites-docs">
+                        <h4 class="requisites-docs__title">Реквизиты</h4>
+                        <div class="requisites-docs__label">
+                            <div class="requisites-docs__image">
+                                <img src="../../../public/cert.png" alt="">
+                            </div>
+                            <div class="requisites-docs__desc">
+                                <p>Сертифицированный туроператор</p>
+                                <p>Номер в реестре Ростуризма РТО 020723</p>
+                            </div>
+                        </div>
+                        <button class="button-primary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 9C2 7.89543 2.89543 7 4 7H20C21.1046 7 22 7.89543 22 9V19C22 20.1046 21.1046 21 20 21H4C2.89543 21 2 20.1046 2 19V9Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 21V5C16 3.89543 15.1046 3 14 3H10C8.89543 3 8 3.89543 8 5V21" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            скачать реквизиты
+                        </button>
+                    </div>
+                    <div class="requisites-table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Параметр</th>
+                                <th>Данные</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Полное наименование фирмы в соответствии с учредительными документами</td>
+                                <td>Общество с ограниченной ответственностью Компания «Тари Тур»</td>
+                            </tr>
+                            <tr>
+                                <td>Сокращенное наименование</td>
+                                <td>ООО Компания «Тари Тур» </td>
+                            </tr>
+                            <tr>
+                                <td>Юридический адрес</td>
+                                <td>127006, г. Москва, Садовая-Триумфальная ул., д. 16, стр. 2.</td>
+                            </tr>
+                            <tr>
+                                <td>Почтовый адрес</td>
+                                <td>117449, г. Москва, ул. Винокурова, д. 2,</td>
+                            </tr>
+                            <tr>
+                                <td>Телефон</td>
+                                <td>7 495 777 90 15</td>
+                            </tr>
+                            <tr>
+                                <td>Факс</td>
+                                <td>7 495 777 90 15</td>
+                            </tr>
+                            <tr>
+                                <td>Генеральный директор</td>
+                                <td>Левченко Марина Юрьевна</td>
+                            </tr>
+                            <tr>
+                                <td>ИНН</td>
+                                <td>7710745032</td>
+                            </tr>
+                            <tr>
+                                <td>КПП</td>
+                                <td>771001001</td>
+                            </tr>
+                            <tr>
+                                <td>ОГРН</td>
+                                <td>1097746009008</td>
+                            </tr>
+                            <tr>
+                                <td>Код отрасли по ОКВЭД</td>
+                                <td>79.1</td>
+                            </tr>
+                            <tr>
+                                <td>Код отрасли по ОКПО</td>
+                                <td>89626548</td>
+                            </tr>
+                            <tr>
+                                <td>ОКАТО</td>
+                                <td>45286585000</td>
+                            </tr>
+                            <tr>
+                                <td>ОКФС</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>ОКТМО</td>
+                                <td>45382000</td>
+                            </tr>
+                            <tr>
+                                <td>ОКОПФ</td>
+                                <td>65</td>
+                            </tr>
+                            <tr>
+                                <td>ОГРН банка</td>
+                                <td>1027739857958</td>
+                            </tr>
+                            <tr>
+                                <td>Расчетный счет</td>
+                                <td>40702810100000032048</td>
+                            </tr>
+                            <tr>
+                                <td>Корреспондентский счет</td>
+                                <td>30101810945250000666</td>
+                            </tr>
+                            <tr>
+                                <td>Банк</td>
+                                <td>ПАО «РосДорБанк» г.Москва</td>
+                            </tr>
+                            <tr>
+                                <td>БИК</td>
+                                <td>044525666</td>
+                            </tr>
+                            <tr>
+                                <td>УСН</td>
+                                <td>Упрощенная система налогообложения</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="footer">
+        <div class="footer-subscribe">
+            <div class="subscribe-title">
+                <h3 class="subscribe-heading3">Будьте в курсе !</h3>
+                <p>Подпишитесь! Подарки, скидки, розыгрыши
+                    призов, новые экскурсии, туры!</p>
+            </div>
+            <div class="subscribe-action">
+                <div class="input-block">
+                    <div class="input-block__icon">
+                        <img src="../../../public/mail.svg" alt="">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="subscribe">E-mail</label>
+                        <input id="subscribe" name="nameInput" type="text">
+                    </div>
+                </div>
+                <button class="button-secondary"><b class="button3">Подписаться</b></button>
+            </div>
+
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-list footer-head">
+                <div class="footer-logo">
+                    <div class="footer-logo__image">
+                        <img src="../../../public/logo_invert.svg" alt="">
+                    </div>
+                    <div class="footer-logo__desc">
+                        <b class="logo-desc__title">Работаем с 1993 года</b>
+                        <p class="logo-desc__subtitle">ООО "Компания Тари Тур"
+                            117449 г. Москва ул. Винокурова, 2</p>
+                    </div>
+                </div>
+                <div class="footer-socials">
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="../../../public/vk_small.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="../../../public/yt_small.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="../../../public/tg_small.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-mail">
+                    <a class="footer-main__link" href="mailto:testmail@gmail.com">
+                        <img src="../../../public/mail.svg" alt="">
+                        <b>ttour@tari.ru</b>
+                    </a>
+                </div>
+                <div class="footer-phones">
+                    <span class="phone">8 800-302-54-91</span>
+                    <span class="phone">+7 495-777-90-15</span>
+                </div>
+            </div>
+            <div class="footer-list footer-body">
+                <div class="footer-body__content">
+                    <div class="footer-body__group">
+                        <p class="footer-body__title footer-body__title__opened">Туры в Москву </p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">Туры в Санкт-петербург</a></li>
+                            <li class="group-list__item"><a href="#">Все туры</a></li>
+                            <li class="group-list__item"><a href="#">Экскурсии</a></li>
+                            <li class="group-list__item"><a href="#">Календарь туров</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-body__group">
+                        <p class="footer-body__title">Услуги</p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">О компании</a></li>
+                            <li class="group-list__item"><a href="#">Контакты</a></li>
+                            <li class="group-list__item"><a href="#">Отели</a></li>
+                            <li class="group-list__item"><a href="#">Подарочный сертификат</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-body__group">
+                        <p class="footer-body__title">Туристам</p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">Договор с туристом</a></li>
+                            <li class="group-list__item"><a href="#">Как купить тур</a></li>
+                            <li class="group-list__item"><a href="#">Блог</a></li>
+                            <li class="group-list__item"><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-body__group">
+                        <p class="footer-body__title">Агентствам</p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">Образцы договоров</a></li>
+                            <li class="group-list__item"><a href="#">Вебинары</a></li>
+                            <li class="group-list__item"><a href="#">Условия сотрудничества</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-list footer-docs">
+                <a href="#" class="footer-docs__link">Пользовательское соглашение</a>
+                <a href="#" class="footer-docs__link">Политика конфиденциальности</a>
+                <a href="#" class="footer-docs__link">Разработка - Сайткрафт</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../../../node_modules/swiper/swiper-bundle.min.js"></script>
+<script src="./index.js" type="module"></script>
+</body>
+</html>

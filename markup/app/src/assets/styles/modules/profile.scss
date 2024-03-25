@@ -1,0 +1,148 @@
+.profile{
+  width: 100%;
+}
+.profile-wrapper{
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.profile-head{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profile-title{
+  width: 100%;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.nav-tabs{
+  display: flex;
+  gap: 24px;
+}
+
+.nav-item{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 22px 16px;
+  color: var(--grayscale-02);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-tab__active{
+  color: var(--main-blue-01);
+  svg{
+    path{
+      stroke: var(--main-blue-01);
+    }
+  }
+  border-bottom: 2px solid var(--main-blue-01);
+}
+
+.load-avatar{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.avatar-controls{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#avatar{
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-input__label{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 197px;
+  gap: 10px;
+  padding: 12px 24px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 24px;
+  color: var(--grayscale-03);
+  border: 1px solid var(--grayscale-05);
+  cursor: pointer;
+}
+.file-input__label__text{
+  font-size: 12px;
+  color: var(--grayscale-02);
+}
+
+
+.profile-button{
+  padding: 12px 24px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.avatar{
+  min-width: 80px;
+  max-width: 80px;
+  min-height: 80px;
+  max-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #D9EAFF;
+  border-radius: 50%;
+}
+
+.orders-wrapper{
+  padding: 0;
+}
+
+
+@media screen and (max-width: 1280px) {
+  .profile-wrapper{
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .profile-form__wrapper{
+    padding: 32px 20px;
+    box-sizing: border-box;
+  }
+  .form-item__input{
+    min-width: unset;
+  }
+  .profile-title{
+    width: 50%;
+    font-size: 24px;
+    order: 0;
+  }
+  .profile-exit{
+    order: 1;
+  }
+  .nav-tabs{
+    order: 2;
+    .nav-item{
+      text-align: center;
+      svg{
+        display: none;
+      }
+    }
+  }
+  .profile-button{
+    width: 100%;
+  }
+}

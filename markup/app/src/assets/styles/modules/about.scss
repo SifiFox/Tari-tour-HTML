@@ -1,0 +1,446 @@
+.about-banner {
+  max-width: 85vw;
+
+  background: url("../../../../public/baner-main.png") no-repeat;
+  background-size: cover;
+  padding: 32px 30px 65px;
+  margin: 0 20px 80px;
+
+  box-sizing: border-box;
+  color: var(--grayscale-07);
+
+  border-radius: 48px;
+  overflow: hidden;
+}
+
+.tours-banner__wrapper {
+  padding-bottom: 0;
+}
+
+
+.stages-title {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--grayscale-02);
+  margin-bottom: 48px;
+
+  span {
+    color: var(--main-blue-01);
+  }
+}
+
+.stages,
+.contacts {
+  margin-top: 0;
+}
+
+.info-banner .tours-banner__title {
+  margin-bottom: 32px;
+}
+
+.about-subtitle {
+  max-width: 735px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 148px;
+}
+
+
+.about-achivments {
+  display: flex;
+  gap: 48px;
+
+  .about-achivment {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+  }
+
+  .achivment-title {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    font-size: 64px;
+    line-height: 100%;
+
+    span {
+      font-size: 24px;
+      line-height: 150%;
+    }
+  }
+
+  .achivment-subtitle {
+    margin-top: 10px;
+    font-size: 14px;
+    max-width: 241px;
+  }
+}
+
+.about-content__advantages {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-content__advantage {
+  width: 413px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 153px;
+}
+
+.about-advantage__square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 176px;
+  height: 176px;
+  border-radius: 24px;
+  box-shadow: 0 -4px 8px 0 rgba(31, 78, 141, 0.06), 0 32px 32px 0 rgba(21, 40, 66, 0.05);
+  font-size: 20px;
+  color: var(--grayscale-02);
+}
+
+.about-advantage__title {
+  text-align: center;
+}
+
+
+.about-whyus {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 64px 67px 20px;
+  box-sizing: border-box;
+  background: var(--main-000);
+  border-radius: 24px;
+  position: relative;
+  min-height: 460px;
+  margin-bottom: 156px;
+}
+
+.about-whyus__images {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 0;
+}
+
+.about-whyus__images__row {
+  display: flex;
+  gap: 20px;
+}
+
+.about-whyus__desc {
+  max-width: 303px;
+  color: var(--grayscale-02);
+}
+
+.about-whyus__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.about-whyus__subtitle {
+  font-size: 20px;
+}
+
+.about-whyus__image {
+  width: 413px;
+  height: 235px;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 4px solid #FFF;
+  transform: rotate(-5deg);
+  box-shadow: 0 -4px 8px 0 rgba(31, 78, 141, 0.06), 0 32px 32px 0 rgba(21, 40, 66, 0.05);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+.about-profitable {
+  display: flex;
+  background: var(--main-blue-01);
+  position: relative;
+  margin-bottom: 160px;
+  border-radius: 24px;
+  min-height: 460px;
+}
+
+.about-profitable__desc {
+  padding: 64px 0 64px 64px;
+  color: #FFF;
+  max-width: 320px;
+  box-sizing: border-box;
+}
+
+.about-profitable__title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.about-profitable__subtitle {
+  font-size: 20px;
+}
+
+.about-profitable__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  max-width: 850px;
+  right: 33px;
+  transform: rotate(-5deg) translateY(-5%);
+}
+
+.about-profitable__cards__row {
+  display: flex;
+  gap: 20px;
+}
+
+.about-profitable__card {
+  box-sizing: border-box;
+  padding: 32px;
+  border-radius: 24px;
+  background: #FFF;
+  box-shadow: 0 -4px 8px 0 rgba(31, 78, 141, 0.06), 0 32px 32px 0 rgba(21, 40, 66, 0.05);
+
+  .about-profitable__title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .about-profitable__subtitle {
+    font-size: 16px;
+  }
+}
+
+.about-profitable__icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 800;
+  color: #FFF;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.about-profitable__icon.bg-blue {
+  svg {
+    path {
+      stroke: #FFF;
+    }
+  }
+}
+
+.about-trust {
+  background: url("../../../../public/trust-bg.png") center no-repeat;
+  background-size: 100%;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 62px 216px;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 160px;
+}
+
+.about-trust__content {
+  padding: 0 81px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  .button-secondary {
+    min-width: 332px;
+  }
+}
+
+.about-trust__title {
+  font-size: 32px;
+}
+
+
+@media screen and (max-width: 1250px) {
+  .about-content__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-content__advantages {
+    order: 1;
+  }
+  .about-content__advantages {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 64px;
+  }
+  .about-content__advantage {
+    flex-direction: row;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+  .about-advantage__square {
+    min-width: 80px;
+    max-width: 80px;
+    height: 80px;
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .about-whyus {
+    background: unset;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: unset;
+    display: flex;
+    order: 0;
+    margin-bottom: 32px;
+  }
+  .about-whyus__images {
+    display: none;
+  }
+
+  .about-whyus__desc {
+    max-width: 100%;
+  }
+
+  .about-profitable {
+    order: 2;
+  }
+  .about-trust {
+    order: 3;
+  }
+  .about-profitable {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 20px;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-profitable__cards {
+    position: relative;
+    transform: unset;
+    right: 0;
+  }
+
+  .about-profitable__cards__row {
+    flex-direction: column;
+  }
+
+  .about-profitable__desc {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .about-banner {
+    background-position-x: 42%;
+    max-width: 100%;
+    border-radius: 0;
+    padding: 24px 20px 32px;
+    margin-bottom: 56px;
+  }
+  .tours-banner__wrapper {
+    padding: 0;
+  }
+
+  .about-whyus,
+  .about-content__advantages {
+    padding: 0 20px;
+  }
+
+  .about-advantage__title {
+    text-align: left;
+  }
+
+  .about-achivments .achivment-title {
+    font-size: 48px;
+
+    span {
+      font-size: 20px;
+    }
+  }
+  .tours-banner:after {
+    height: 100%;
+  }
+  .about-achivments {
+    flex-direction: column;
+  }
+
+  .about-profitable {
+    border-radius: 0;
+    margin-bottom: 123px;
+  }
+
+  .about-trust {
+    padding: 0;
+    background-size: cover;
+    background: linear-gradient(
+                    rgba(0, 0, 0, 0.25),
+                    rgba(0, 0, 0, 0.25)
+    ),
+    url("../../../../public/trust-bg__mobile.png");
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    .about-trust__content {
+      padding: 136px 16px;
+      .button-secondary{
+        min-width: unset;
+        width: 100%;
+      }
+    }
+  }
+
+  .about-trust__title{
+    font-size: 24px;
+  }
+
+  .about-profitable__card {
+    display: flex;
+    gap: 24px;
+    padding: 24px 16px;
+
+    .about-profitable__icon {
+      min-width: 44px;
+    }
+  }
+
+  .about-profitable__title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .about-profitable__subtitle {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .about-subtitle {
+    margin-bottom: 48px;
+  }
+  .about-achivments {
+    gap: 32px;
+  }
+}

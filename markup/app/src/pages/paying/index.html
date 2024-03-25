@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../assets/styles/utils/global.css" >
+    <link rel="stylesheet" href="../../assets/styles/index.css" >
+    <link rel="stylesheet" href="../../assets/styles/modules/tours.css" >
+    <link rel="stylesheet" href="../../assets/styles/modules/info.css" >
+    <title>Оплата</title>
+</head>
+<body>
+<div class="wrapper tours-wrapper">
+    <header class="header-wrapper tours-header__wrapper">
+        <div class="header">
+            <div class="header-mobile">
+                <div class="burger-mobile">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+                <div class="logo-mobile">
+                    <a href="#">
+                        <img src="../../../public/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="phone-mobile">
+                    <img src="../../../public/phone.svg" alt="">
+                </div>
+            </div>
+
+            <div class="header-head flex-row__center">
+                <div class="logo-wrapper">
+                    <img
+                            class="logo-icon"
+                            alt=""
+                            src="../../../public/logo.svg"
+                    >
+                    <div class="logo-body">
+                        <b>Авторские</b>
+                        <p class="logo-subtitle">групповые туры по России с 1993 года</p>
+                    </div>
+                </div>
+                <button class="button-outlined">
+                    <img
+                            class="header-icon__map"
+                            alt=""
+                            src="../../../public/map.svg"
+                    >
+                    <b>Подберите мне тур</b>
+                </button>
+                <div class="header-contacts">
+                    <b class="header-contact">ttour@tari.ru</b>
+                    <b class="header-schedule">Пн - Пт: 09:00 - 19:00</b>
+                </div>
+                <div class="phones-wrapper">
+                    <div class="phones">
+                        <span class="phone">8 800-302-54-91</span>
+                        <span class="phone">+7 495-777-90-15</span>
+                    </div>
+                    <img
+                            class="feather-icon-user"
+                            alt=""
+                            src="../../../public/feathericon--user.svg"
+                    >
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="../catalog__tours/index.html" class="header-menu-item ">
+                    <b class="nav-item__title">Туры в Москву </b>
+                    <img
+                            class="arrow-down__icon"
+                            alt=""
+                            src="../../../public/arrow.svg"
+                    >
+                </a>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Туры в Санкт-петербург </b>
+                    <img
+                            class="arrow-down__icon"
+                            alt=""
+                            src="../../../public/arrow.svg"
+                    >
+                </div>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Туры По России</b>
+                    <img
+                            class="arrow-down__icon"
+                            alt=""
+                            src="../../../public/arrow.svg"
+                    >
+                </div>
+                <a href="#" class="header-menu-item ">
+                    <b class="nav-item__title">Экскурсии</b>
+                </a>
+                <div class="header-menu-item">
+                    <img
+                            class="feather-icon-calendar"
+                            alt=""
+                            src="../../../public/calendar.svg"
+                    >
+                    <b class="nav-item__title">Календарь туров</b>
+                </div>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Услуги </b>
+                </div>
+                <a href="#" class="header-menu-item header-menu-item__active">
+                    <b class="nav-item__title">О компании </b>
+                </a>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Контакты </b>
+                </div>
+            </nav>
+
+            <div class="nav-mobile">
+                <div class="nav-mobile__header">
+                    <div class="nav-mobile__close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="#F7F7FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 6L18 18" stroke="#F7F7FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="nav-mobile__body">
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры в Москву</p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры в Санкт-петербург </p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры в Санкт-петербург </p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры По России </p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Экскурсии </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Календарь  туров </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Услуги </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>О компании  </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Контакты  </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Личный кабинет  </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+
+                </div>
+                <div class="nav-mobile__footer">
+                    <div class="nav-mobile__footer__wrapper">
+                        <div class="nav-mobile__phones">
+                            <p>8 800-302-54-91</p>
+                            <p>+7 495-777-90-15</p>
+                        </div>
+                        <div class="nav-mobile__socials">
+                            <img src="../../../public/vk_small.png" alt="">
+                            <img src="../../../public/yt_small.png" alt="">
+                            <img src="../../../public/tg_small.png" alt="">
+                        </div>
+                        <div class="nav-mobile__mail">
+                            <img src="../../../public/mail.svg" alt="">
+                            <p>ttour@tari.ru</p>
+                        </div>
+                        <div class="nav-mobile__button">
+                            <button class="button-primary">
+                                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.8335 5.00008V18.3334L7.66683 15.0001L14.3335 18.3334L20.1668 15.0001V1.66675L14.3335 5.00008L7.66683 1.66675L1.8335 5.00008V5.00008Z" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.6665 1.66675V15.0001" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.3335 5V18.3333" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                                <b class="button3">Подберите мне тур</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="tours-banner info-banner">
+        <div class="tours-banner__wrapper">
+            <div class="tours-banner__breadcrumbs">
+                <a href="#" class="breadcrumb">Главная</a>
+                <span class="breadcrumb-separator">—</span>
+                <a href="#" class="breadcrumb">О компании</a>
+                <span class="breadcrumb-separator">—</span>
+                <a href="#" class="breadcrumb">Оплата</a>
+            </div>
+            <h1 class="tours-banner__title">Оплата</h1>
+
+        </div>
+    </div>
+
+    <section class="stages">
+        <div class="stages-wrapper">
+            <div class="info-paying__stages">
+                <div class="info-paying__stage">
+                    <div class="paying-stage__number">1</div>
+                    <h4 class="paying-stage__title">Label</h4>
+                    <p class="paying-stage__body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    </p>
+                </div>
+                <div class="info-paying__stage">
+                    <div class="paying-stage__number">1</div>
+                    <h4 class="paying-stage__title">Label</h4>
+                    <p class="paying-stage__body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    </p>
+                </div>
+                <div class="info-paying__stage">
+                    <div class="paying-stage__number">1</div>
+                    <h4 class="paying-stage__title">Label</h4>
+                    <p class="paying-stage__body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    </p>
+                </div>
+                <div class="info-paying__stage">
+                    <div class="paying-stage__number">1</div>
+                    <h4 class="paying-stage__title">Label</h4>
+                    <p class="paying-stage__body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    </p>
+                </div>
+                <div class="info-paying__stage">
+                    <div class="paying-stage__number">1</div>
+                    <h4 class="paying-stage__title">Label</h4>
+                    <p class="paying-stage__body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    </p>
+                </div>
+                <div class="info-paying__stage">
+                    <div class="paying-stage__number">1</div>
+                    <h4 class="paying-stage__title">Label</h4>
+                    <p class="paying-stage__body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="howtopay">
+         <div class="howtopay-wrapper">
+             <div class="howtopay-top">
+                 <div>
+                     <h3 class="howtopay__title">Как сделать заказ</h3>
+                     <div class="howtopay-variants">
+                         <div class="howtopay-variant">
+                             <h4 class="info-title variant-title">Вариант 1</h4>
+                             <ol class="variant-stages">
+                                 <li class="variant-stage">Выбрать услугу</li>
+                                 <li class="variant-stage">Нажать кнопку "Бронировать"</li>
+                                 <li class="variant-stage">Дождаться подтверждения наличия нужного количества мест</li>
+                                 <li class="variant-stage">Далее нажать кнопку "оплатить".</li>
+                                 <li class="variant-stage">Внести данные людей, которые будут пользоваться услугой.</li>
+                                 <li class="variant-stage">Внести данные карты.</li>
+                                 <li class="variant-stage">На e-mail Вы получите подтверждение оплаты и ваучер на услугу(и)</li>
+                             </ol>
+                             <p>Вы так же можете связаться с менеджером по телефону: +7 495 777-90-15</p>
+                         </div>
+                         <div class="howtopay-variant howtopay-block">
+                             <h4 class="info-title variant-title">Вариант 2</h4>
+                             <ol class="variant-stages">
+                                 <li class="variant-stage">Направляете запрос на расчет экскурсионного/транспортного обслуживания менеджеру на email-адрес:
+                                     <a href="mailto:ttour@tari.ru">ttour@tari.ru</a>
+                                 </li>
+                                 <li class="variant-stage">Менеджер в ответном письме высылает смету с расчётом и стоимостью.</li>
+                                 <li class="variant-stage">После подтверждения стоимости, менеджер высылает ссылку для оплаты банковской картой, в которой указаны данные плательщика, номер счета, и финальная сумма за услуги.</li>
+                                 <li class="variant-stage">В счет включается комиссия банка за оказания услуг.</li>
+                                 <li class="variant-stage">После получения оплаты, менеджер уведомляет о получение денежных средств на счет. Услуга считается забронированной.</li>
+                             </ol>
+                             <p>Вы так же можете связаться с менеджером по телефону: +7 495 777-90-15</p>
+                         </div>
+                     </div>
+                 </div>
+                 <aside class="howtopay-aside">
+                     <div class="howtopay-aside__icon">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0007 18.3334C10.0007 18.3334 16.6673 15.0001 16.6673 10.0001V3.33341L10.0007 1.66675L3.33398 3.33341V10.0001C3.33398 15.0001 10.0007 18.3334 10.0007 18.3334Z" stroke="#14142B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                         </svg>
+                     </div>
+                     <h4 class="info-title howtopay-aside__title">Гарантии безопасности:</h4>
+                     <div class="howtopay-aside__body">
+                         <p>
+                             Данные Вашей платежной карты гарантировано защищены в соответствии со стандартами безопасности PCI DSS.
+                             Данные карты вводятся на защищенной банковской платежной странице,
+                             передача информации происходит с применением технологии шифрования SSL.
+                         </p>
+                         <p>
+                             Дальнейшая передача информации происходит по закрытым банковским сетям, имеющим наивысший уровень надежности.
+                             Для дополнительной аутентификации Держателя карты используется протокол 3D-Secure.
+                             Если Эмитент поддерживает данную технологию, Вы будете перенаправлены
+                             на его сервер для ввода дополнительных реквизитов платежа".
+                         </p>
+                     </div>
+                 </aside>
+             </div>
+             <div class="howtopay-bottom">
+                <div class="howtopay-block">
+                    <h4 class="info-title variant-title">Информация о получении услуги</h4>
+                    <div class="howtopay-block__body">
+                        <ol class="variant-stages">
+                            <li>После получения денежных средств на расчётный счет компании, вы получите уведомление на электронную почту с подтверждением.</li>
+                            <li>Услуга считается оплаченной и будет оказана в полном объеме в указанную дату и время.</li>
+                            <li>Если у вас останутся претензии по оказанию услуги, то вы можете потребовать компенсацию, обратившись в офис компании.</li>
+                        </ol>
+                    </div>
+                </div>
+                 <div class="howtopay-block">
+                     <h4 class="info-title variant-title">Способы оплаты</h4>
+                     <div class="howtopay-block__body">
+                         <ol class="variant-stages">
+                             <li>Оплату можно совершить, нажав кнопку "оплатить" после подтверждения наличия мест. Вы будете перенаправлены на страницу с оплатой банковской картой.</li>
+                             <li>Для юр.лиц: Оплату можно совершить, сделав запрос у менеджера по электронной почте или телефону. Вы получите счет для юр.лица.</li>
+                         </ol>
+                     </div>
+                 </div>
+                 <div class="howtopay-block">
+                     <h4 class="info-title variant-title">Возврат денежных средств или обмен товара</h4>
+                     <div class="howtopay-block__body">
+                        <p>Вы можете совершить запрос на возврат денежных средств следующим образом:</p>
+                         <ol class="howtopay-refund">
+                             <li>
+                                 в email письме нашему менеджеру написать номер заявки,
+                                 даты оказания услуги, с просьбой аннулировать данный заказ.
+                             </li>
+                             <li>
+                                 Деньги будут возвращены на расчетный счет,
+                                 с которого была произведена оплата в течение 7 дней.
+                             </li>
+                             <li>
+                                 Заказ возможно аннулировать без комиссии за 30 дней до оказания услуги.
+                             </li>
+                             <li>
+                                 Менее чем 14 дней удерживается комиссия в размере 40%
+                             </li>
+                             <li>
+                                 Менее чем 3 дня удерживается 100% комиссия.
+                             </li>
+                             <li>
+                                 Оплата платежной картой в сети Интернет
+                             </li>
+                             <li>
+                                 Вы можете оплатить свой заказ платежной картой Visa, Mastercard или МИР в Интернет-магазине.
+                             </li>
+                         </ol>
+                        <p>
+                            После успешной оплаты Вы получите электронный чек.
+                            Информация, указанная на чеке, содержит все данные о проведенной операции оплаты.
+                        </p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+
+    <section class="support">
+        <div class="support-wrapper">
+            <div class="support-close"></div>
+            <div class="support-form__wrapper">
+                <h2 class="support-from__title">Сложно выбрать тур?</h2>
+                <p class="support-from__subtitle">Оставьте заявку и получите консультацию и подборку туров от экспертов Тари Тур</p>
+                <form class="support-form">
+                    <div class="input-block">
+                        <div class="input-block__icon">
+                            <img src="../../../public/feathericon--user.svg" alt="">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="nameInput">Имя</label>
+                            <input id="nameInput" name="nameInput" type="text">
+                        </div>
+                    </div>
+                    <div class="input-block">
+                        <div class="input-block__icon">
+                            <img src="../../../public/phone.svg" alt="">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="phoneInput">Номер телефона</label>
+                            <input id="phoneInput" name="phoneInput" type="text">
+                        </div>
+                    </div>
+                    <div class="input-block input-block__full">
+                        <div class="input-block__icon">
+                            <img src="../../../public/message-circle.svg" alt="">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="supportBody">Куда хотите поехать?</label>
+                            <textarea id="supportBody" rows="4" class="support-textarea" name="supportBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea....</textarea>
+                        </div>
+                    </div>
+                    <button class="support-submit button-primary">
+                        <img src="../../../public/arrow-right__white.svg" alt="">
+                        Оставить заявку
+                    </button>
+                </form>
+            </div>
+            <div class="support-image">
+                <img src="../../../public/support.png" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="footer-subscribe">
+            <div class="subscribe-title">
+                <h3 class="subscribe-heading3">Будьте в курсе !</h3>
+                <p>Подпишитесь! Подарки, скидки, розыгрыши
+                    призов, новые экскурсии, туры!</p>
+            </div>
+            <div class="subscribe-action">
+                <div class="input-block">
+                    <div class="input-block__icon">
+                        <img src="../../../public/mail.svg" alt="">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="subscribe">E-mail</label>
+                        <input id="subscribe" name="nameInput" type="text">
+                    </div>
+                </div>
+                <button class="button-secondary"><b class="button3">Подписаться</b></button>
+            </div>
+
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-list footer-head">
+                <div class="footer-logo">
+                    <div class="footer-logo__image">
+                        <img src="../../../public/logo_invert.svg" alt="">
+                    </div>
+                    <div class="footer-logo__desc">
+                        <b class="logo-desc__title">Работаем с 1993 года</b>
+                        <p class="logo-desc__subtitle">ООО "Компания Тари Тур"
+                            117449 г. Москва ул. Винокурова, 2</p>
+                    </div>
+                </div>
+                <div class="footer-socials">
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="../../../public/vk_small.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="../../../public/yt_small.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="../../../public/tg_small.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-mail">
+                    <a class="footer-main__link" href="mailto:testmail@gmail.com">
+                        <img src="../../../public/mail.svg" alt="">
+                        <b>ttour@tari.ru</b>
+                    </a>
+                </div>
+                <div class="footer-phones">
+                    <span class="phone">8 800-302-54-91</span>
+                    <span class="phone">+7 495-777-90-15</span>
+                </div>
+            </div>
+            <div class="footer-list footer-body">
+                <div class="footer-body__content">
+                    <div class="footer-body__group">
+                        <p class="footer-body__title footer-body__title__opened">Туры в Москву </p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">Туры в Санкт-петербург</a></li>
+                            <li class="group-list__item"><a href="#">Все туры</a></li>
+                            <li class="group-list__item"><a href="#">Экскурсии</a></li>
+                            <li class="group-list__item"><a href="#">Календарь туров</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-body__group">
+                        <p class="footer-body__title">Услуги</p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">О компании</a></li>
+                            <li class="group-list__item"><a href="#">Контакты</a></li>
+                            <li class="group-list__item"><a href="#">Отели</a></li>
+                            <li class="group-list__item"><a href="#">Подарочный сертификат</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-body__group">
+                        <p class="footer-body__title">Туристам</p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">Договор с туристом</a></li>
+                            <li class="group-list__item"><a href="#">Как купить тур</a></li>
+                            <li class="group-list__item"><a href="#">Блог</a></li>
+                            <li class="group-list__item"><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-body__group">
+                        <p class="footer-body__title">Агентствам</p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">Образцы договоров</a></li>
+                            <li class="group-list__item"><a href="#">Вебинары</a></li>
+                            <li class="group-list__item"><a href="#">Условия сотрудничества</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-list footer-docs">
+                <a href="#" class="footer-docs__link">Пользовательское соглашение</a>
+                <a href="#" class="footer-docs__link">Политика конфиденциальности</a>
+                <a href="#" class="footer-docs__link">Разработка - Сайткрафт</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

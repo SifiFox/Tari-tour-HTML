@@ -1,0 +1,1903 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../node_modules/vanilla-calendar-pro/build/vanilla-calendar.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="../../assets/styles/utils/global.css" >
+    <link rel="stylesheet" href="../../assets/styles/index.css" >
+    <link rel="stylesheet" href="../../assets/styles/modules/tours.css" >
+    <link rel="stylesheet" href="../../assets/styles/modules/profile.css" >
+    <link rel="stylesheet" href="../../assets/styles/modules/tour-details.css" >
+    <title>Каталог экскурсий</title>
+</head>
+<body>
+<div class="wrapper tours-wrapper">
+    <header class="header-wrapper tours-header__wrapper">
+        <div class="header">
+            <div class="header-mobile">
+                <div class="burger-mobile">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+                <div class="logo-mobile">
+                    <a href="#">
+                        <img src="../../../public/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="phone-mobile">
+                    <img src="../../../public/phone.svg" alt="">
+                </div>
+            </div>
+
+            <div class="header-head flex-row__center">
+                <div class="logo-wrapper">
+                    <img
+                            class="logo-icon"
+                            alt=""
+                            src="../../../public/logo.svg"
+                    >
+                    <div class="logo-body">
+                        <b>Авторские</b>
+                        <p class="logo-subtitle">групповые туры по России с 1993 года</p>
+                    </div>
+                </div>
+                <button class="button-outlined">
+                    <img
+                            class="header-icon__map"
+                            alt=""
+                            src="../../../public/map.svg"
+                    >
+                    <b>Подберите мне тур</b>
+                </button>
+                <div class="header-contacts">
+                    <b class="header-contact">ttour@tari.ru</b>
+                    <b class="header-schedule">Пн - Пт: 09:00 - 19:00</b>
+                </div>
+                <div class="phones-wrapper">
+                    <div class="phones">
+                        <span class="phone">8 800-302-54-91</span>
+                        <span class="phone">+7 495-777-90-15</span>
+                    </div>
+                    <img
+                            class="feather-icon-user"
+                            alt=""
+                            src="../../../public/feathericon--user.svg"
+                    >
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="../catalog__tours/index.html" class="header-menu-item ">
+                    <b class="nav-item__title">Туры в Москву </b>
+                    <img
+                            class="arrow-down__icon"
+                            alt=""
+                            src="../../../public/arrow.svg"
+                    >
+                </a>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Туры в Санкт-петербург </b>
+                    <img
+                            class="arrow-down__icon"
+                            alt=""
+                            src="../../../public/arrow.svg"
+                    >
+                </div>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Туры По России</b>
+                    <img
+                            class="arrow-down__icon"
+                            alt=""
+                            src="../../../public/arrow.svg"
+                    >
+                </div>
+                <a href="#" class="header-menu-item header-menu-item__active">
+                    <b class="nav-item__title">Экскурсии</b>
+                </a>
+                <div class="header-menu-item">
+                    <img
+                            class="feather-icon-calendar"
+                            alt=""
+                            src="../../../public/calendar.svg"
+                    >
+                    <b class="nav-item__title">Календарь туров</b>
+                </div>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Услуги </b>
+                </div>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">О компании </b>
+                </div>
+                <div class="header-menu-item">
+                    <b class="nav-item__title">Контакты </b>
+                </div>
+            </nav>
+            <div class="nav-mobile ">
+                <div class="nav-mobile__header">
+                    <div class="nav-mobile__close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="#F7F7FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 6L18 18" stroke="#F7F7FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="nav-mobile__body">
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры в Москву</p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры в Санкт-петербург </p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры в Санкт-петербург </p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Туры По России </p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Экскурсии </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Календарь  туров </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Услуги </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>О компании  </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Контакты  </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+                    <div class="nav-mobile__item">
+                        <div class="nav-item__title">
+                            <p>Личный кабинет  </p>
+                        </div>
+                        <div class="nav-item__body"></div>
+                    </div>
+
+
+                </div>
+                <div class="nav-mobile__footer">
+                    <div class="nav-mobile__footer__wrapper">
+                        <div class="nav-mobile__phones">
+                            <p>8 800-302-54-91</p>
+                            <p>+7 495-777-90-15</p>
+                        </div>
+                        <div class="nav-mobile__socials">
+                            <img src="../../../public/vk_small.png" alt="">
+                            <img src="../../../public/yt_small.png" alt="">
+                            <img src="../../../public/tg_small.png" alt="">
+                        </div>
+                        <div class="nav-mobile__mail">
+                            <img src="../../../public/mail.svg" alt="">
+                            <p>ttour@tari.ru</p>
+                        </div>
+                        <div class="nav-mobile__button">
+                            <button class="button-primary">
+                                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.8335 5.00008V18.3334L7.66683 15.0001L14.3335 18.3334L20.1668 15.0001V1.66675L14.3335 5.00008L7.66683 1.66675L1.8335 5.00008V5.00008Z" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.6665 1.66675V15.0001" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.3335 5V18.3333" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                                <b class="button3">Подберите мне тур</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="tour-details">
+        <div class="tour-details__wrapper">
+            <div class="tour-details__head">
+                <div class="tours-banner__breadcrumbs tour-details__breadcrumbs">
+                    <a href="#" class="breadcrumb">Главная</a>
+                    <span class="breadcrumb-separator">—</span>
+                    <a href="#" class="breadcrumb">Экскурсии в Москву</a>
+                    <span class="breadcrumb-separator">—</span>
+                    <a href="#" class="breadcrumb">Тур в Москву “Город чудный, город древний”</a>
+                </div>
+                <h1 class="tour-details__title">Тур в Москву “Город чудный, город древний”</h1>
+            </div>
+            <div class="tour-details__tags">
+                <div class="tourcard-tag tag-yellow">
+                    <div class="tag-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7268 8.94004L8.94683 13.72C8.69674 13.9704 8.35738 14.1111 8.0035 14.1111C7.64962 14.1111 7.31025 13.9704 7.06016 13.72L1.3335 8.00004V1.33337H8.00016L13.7268 7.06004C14.2438 7.58009 14.2438 8.41999 13.7268 8.94004Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="5.6665" cy="5.66663" r="1" />
+                    </svg>
+                    </div>
+                    <span class="tag-desc">ХИТ</span>
+                </div>
+
+                <div class="tourcard-tag tag-primary">
+                    <div class="tag-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7268 8.94004L8.94683 13.72C8.69674 13.9704 8.35738 14.1111 8.0035 14.1111C7.64962 14.1111 7.31025 13.9704 7.06016 13.72L1.3335 8.00004V1.33337H8.00016L13.7268 7.06004C14.2438 7.58009 14.2438 8.41999 13.7268 8.94004Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="5.6665" cy="5.66663" r="1" />
+                    </svg>
+                    </div>
+                    <span class="tag-desc">Скидка</span>
+                </div>
+
+                <div class="tourcard-tag tag-green">
+                    <div class="tag-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7268 8.94004L8.94683 13.72C8.69674 13.9704 8.35738 14.1111 8.0035 14.1111C7.64962 14.1111 7.31025 13.9704 7.06016 13.72L1.3335 8.00004V1.33337H8.00016L13.7268 7.06004C14.2438 7.58009 14.2438 8.41999 13.7268 8.94004Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="5.6665" cy="5.66663" r="1" />
+                    </svg>
+                    </div>
+                    <span class="tag-desc">2+1</span>
+                </div>
+            </div>
+            <div class="tour-details__banner">
+                <div class="details-banner__thumbs">
+                    <div class="thumb-active"></div>
+                    <div class="thumb"></div>
+                    <div class="thumb"></div>
+                    <div class="thumb"></div>
+                    <div class="thumb"></div>
+                </div>
+                <!--##########№№№№########################################-->
+                <!--######### В зависимости от кол-ва изображения ########-->
+                <!--##############№№№№####################################-->
+                <div class="picture-full ">
+                    <div class="picture-full__mask">
+                        <div class="picture-full__content">
+                            <div class="picture-full__close">
+                                <img src="../../../public/x.svg" alt="">
+                            </div>
+                            <div class="swiper picture-full__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide picture-full__slide">
+                                        <img src="../../../public/gallery1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide picture-full__slide">
+                                        <img src="../../../public/gallery1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide picture-full__slide">
+                                        <img src="../../../public/gallery1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="picture-full__nav__wrapper">
+                                <div class="picture-full__nav picture-full__next">
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.1668 10H3.8335" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.8335 15L3.8335 10L8.8335 5" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="picture-full__nav picture-full__prev">
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.8335 10H17.1668" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12.1665 5L17.1665 10L12.1665 15" stroke="#4E4B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="full-picture__pagination swiper-pagination swiper-pagination__default"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="details-banner__wrapper more_five">
+                    <div class="pic1">
+                        <img src="../../../public/details_banner_1.png" alt="">
+                    </div>
+                    <div class="pic2">
+                        <img src="../../../public/details_banner_2.png" alt="">
+                    </div>
+                    <div class="pic3">
+                        <img src="../../../public/details_banner_3.png" alt="">
+                    </div>
+                    <div class="pic4">
+                        <img src="../../../public/details_banner_4.png" alt="">
+                    </div>
+                    <div class="pic5">
+                        <img src="../../../public/details_banner_5.png" alt="">
+                    </div>
+                    <div class="pic6">
+                        <img src="../../../public/details_banner_1.png" alt="">
+                        <p>+ 8 фото</p>
+                    </div>
+                </div>
+<!--                <div class="details-banner__wrapper four">-->
+<!--                    <div class="pic1">-->
+<!--                        <img src="../../../public/details_banner_1.png" alt="">-->
+<!--                    </div>-->
+<!--                    <div class="pic2">-->
+<!--                        <img src="../../../public/details_banner_2.png" alt="">-->
+<!--                    </div>-->
+<!--                    <div class="pic3">-->
+<!--                        <img src="../../../public/details_banner_3.png" alt="">-->
+<!--                    </div>-->
+<!--                    <div class="pic4">-->
+<!--                        <img src="../../../public/details_banner_4.png" alt="">-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="details-banner__wrapper three">-->
+<!--                    <div class="pic1">-->
+<!--                        <img src="../../../public/details_banner_1.png" alt="">-->
+<!--                    </div>-->
+<!--                    <div class="pic2">-->
+<!--                        <img src="../../../public/details_banner_2.png" alt="">-->
+<!--                    </div>-->
+<!--                    <div class="pic3">-->
+<!--                        <img src="../../../public/details_banner_3.png" alt="">-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="details-banner__wrapper two">-->
+<!--                    <div class="pic1">-->
+<!--                        <img src="../../../public/details_banner_1.png" alt="">-->
+<!--                    </div>-->
+<!--                    <div class="pic2">-->
+<!--                        <img src="../../../public/details_banner_2.png" alt="">-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="details-banner__wrapper one">-->
+<!--                    <div class="pic1">-->
+<!--                        <img src="../../../public/details_banner_1.png" alt="">-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+
+            <div class="tour-details__price">
+                <div class="tour-price__wrapper">
+                    <div class="tour-price__title">
+                        <p class="price-title">Цена (за человека) от:</p>
+                        <p class="price-value">19 950 <span class="currency-small">₽</span></p>
+                    </div>
+                    <div class="tour-price__paying">
+                        <div class="price-paying__item">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.1654 5.83325L7.9987 14.9999L3.83203 10.8333" stroke="#46DD06" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p>Не требует оплаты сейчас</p>
+                        </div>
+                    </div>
+                    <button class="button-primary tour-price__button">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35742 5.33325C3.35742 4.22868 4.25285 3.33325 5.35742 3.33325H16.3574C17.462 3.33325 18.3574 4.22868 18.3574 5.33325V16.3333C18.3574 17.4378 17.462 18.3333 16.3574 18.3333H5.35742C4.25285 18.3333 3.35742 17.4378 3.35742 16.3333V5.33325Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.1909 1.66675V5.00008" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.52393 1.66675V5.00008" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.35742 8.33325H18.3574" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        даты и цены
+                    </button>
+                    <div class="tour-price__links">
+                        <a href="#" class="tour-price__link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.8656 9.7186L10.2073 17.3769C8.25357 19.3306 5.08598 19.3306 3.13227 17.3769C1.17857 15.4232 1.17857 12.2556 3.13227 10.3019L10.7906 2.6436C12.0931 1.34113 14.2048 1.34113 15.5073 2.6436C16.8097 3.94607 16.8097 6.0578 15.5073 7.36027L7.84061 15.0186C7.18937 15.6698 6.13351 15.6698 5.48227 15.0186C4.83104 14.3674 4.83104 13.3115 5.48227 12.6603L12.5573 5.5936" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Авиабилеты со скидкой
+                        </a>
+                        <a href="#" class="tour-price__link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.8656 9.7186L10.2073 17.3769C8.25357 19.3306 5.08598 19.3306 3.13227 17.3769C1.17857 15.4232 1.17857 12.2556 3.13227 10.3019L10.7906 2.6436C12.0931 1.34113 14.2048 1.34113 15.5073 2.6436C16.8097 3.94607 16.8097 6.0578 15.5073 7.36027L7.84061 15.0186C7.18937 15.6698 6.13351 15.6698 5.48227 15.0186C4.83104 14.3674 4.83104 13.3115 5.48227 12.6603L12.5573 5.5936" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            ЖД билеты со скидкой
+                        </a>
+                        <a href="#" class="tour-price__link">
+                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.83301 5.33325C1.83301 4.22868 2.72844 3.33325 3.83301 3.33325H18.1663C19.2709 3.33325 20.1663 4.22868 20.1663 5.33325V14.6666C20.1663 15.7712 19.2709 16.6666 18.1663 16.6666H3.83301C2.72844 16.6666 1.83301 15.7712 1.83301 14.6666V5.33325Z" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.83301 8.33325H20.1663" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Все способы оплаты
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tour-details__nav nav-tabs">
+                <a href="#" class="nav-item nav-tab__active">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6663 1.66675H4.99967C4.0792 1.66675 3.33301 2.41294 3.33301 3.33341V16.6667C3.33301 17.5872 4.0792 18.3334 4.99967 18.3334H14.9997C15.9201 18.3334 16.6663 17.5872 16.6663 16.6667V6.66675L11.6663 1.66675Z" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.667 1.66675V6.66675H16.667" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.3337 10.8333H6.66699" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.3337 14.1667H6.66699" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.33366 7.5H7.50033H6.66699" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                    <span class="nav-item__desc">Описание</span>
+                </a>
+                <a href="#" class="nav-item ">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35742 5.33325C3.35742 4.22868 4.25285 3.33325 5.35742 3.33325H16.3574C17.462 3.33325 18.3574 4.22868 18.3574 5.33325V16.3333C18.3574 17.4378 17.462 18.3333 16.3574 18.3333H5.35742C4.25285 18.3333 3.35742 17.4378 3.35742 16.3333V5.33325Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.1909 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.52393 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.35742 8.33325H18.3574" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="nav-item__desc">Дата набора групп</span>
+                </a>
+                <a href="#" class="nav-item ">
+                    <svg width="20" height="20" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.4987 14.6666C12.1806 14.6666 15.1654 11.6819 15.1654 7.99998C15.1654 4.31808 12.1806 1.33331 8.4987 1.33331C4.8168 1.33331 1.83203 4.31808 1.83203 7.99998C1.83203 11.6819 4.8168 14.6666 8.4987 14.6666Z" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.5 4V8L10.5 10" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="nav-item__desc">Программа тура</span>
+                </a>
+                <a href="#" class="nav-item ">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.66797 5H17.5013" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.66797 10H17.5013" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.66797 15H17.5013" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.33203 5H2.4987" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.33203 10H2.4987" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.33203 15H2.4987" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="nav-item__desc">Что входит</span>
+                </a>
+            </div>
+        </div>
+        <div class="tour-details__content">
+            <section class="tour-details__description bluebg">
+                <div class="tour-content__block content-desc__block tour-content__active">
+                    <h3 class="tour-content__title ">
+                        Описание
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </h3>
+                    <div class="tour-content__inner">
+                        <div class="content-desc__subblock">
+                            <div class="content-desc__maininfo color-blue">
+                                <span class="desc-maininfo__item">Сборный тур, Тур выходного дня, Популярный тур</span>
+                                <span class="desc-maininfo__item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 1V3" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 21V23" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.21973 4.21997L5.63973 5.63997" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.3604 18.3601L19.7804 19.7801" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M1 12H3" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 12H23" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.21973 19.7801L5.63973 18.3601" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.3604 5.63997L19.7804 4.21997" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    5 дней
+                                </span>
+                                <span class="desc-maininfo__item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 17C17 14.2386 14.7614 12 12 12C9.23858 12 7 14.2386 7 17" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 8V1" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.21973 9.21997L5.63973 10.64" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 17H3" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 17H23" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.3604 10.64L19.7804 9.21997" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M23 21H1" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 4L12 8L8 4" stroke="#2F7FED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    4ночи
+                                </span>
+                            </div>
+                            <div class="content-desc-info">
+                                <div class="content-desc-info__block">
+                                    <p class="bold">Маршрут:</p>
+                                    <p>Москва - Переславль-Залесский - Сергиев-Посад - Москва</p>
+                                </div>
+                                <div class="content-desc-info__block">
+                                    <p class="bold">Даты набора групп:</p>
+                                    <p>Каждую среду до 24.04.2024. Конкретные даты смотрите ниже, в блоке "Дата набора групп"</p>
+                                </div>
+                                <div class="content-desc-info__block">
+                                    <p>Погуляем по Петроградской стороне? Здесь, вдали от туристических маршрутов и популярных объектов, вы погрузитесь в атмосферу мрачных дворов-колодцев и величественной архитектуры былой эпохи. Рассмотрите яркие витражи и параллельно узнаете о быте простых горожан, живших и живущих здесь. А в конце посетите настоящую мастерскую художников под крышей старинного дома.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-desc__subblock">
+                            <p class="content-subblock__title">Вы посетите:</p>
+                            <div class="content-desc__links">
+                                <a class="content-desc__link" href="#">Третьяковская галерея</a>
+                                <a class="content-desc__link" href="#">Московский Кремль (территория)</a>
+                                <a class="content-desc__link" href="#">Автобусная обзорная экскурсия по городу</a>
+                                <a class="content-desc__link" href="#">Усадьба Архангельское</a>
+                                <a class="content-desc__link" href="#">Красная площадь</a>
+                                <a class="content-desc__link" href="#">Прогулка по парку Зарядье. Атракцион над Россией.</a>
+                                <a class="content-desc__link" href="#">Музей-усадьба Коломенское</a>
+                            </div>
+                        </div>
+                        <div class="content-desc__subblock">
+                            <p>Погуляем по Петроградской стороне? Здесь, вдали от туристических маршрутов и популярных объектов, вы погрузитесь в атмосферу мрачных дворов-колодцев и величественной архитектуры былой эпохи. Рассмотрите яркие витражи и параллельно узнаете о быте простых горожан, живших и живущих здесь. А в конце посетите настоящую мастерскую художников под крышей старинного дома.</p>
+                        </div>
+                        <div class="content-desc__subblock content-desc__services">
+                            <div class="content-services__row">
+                                <div class="content-desc__service">
+                                    <img src="../../../public/bus-gray.png" alt="">
+                                    <p>Автобус</p>
+                                </div>
+
+                                <div class="content-desc__service">
+                                    <img src="../../../public/leaving-gray.png" alt="">
+                                    <p>Проживание</p>
+                                </div>
+
+                                <div class="content-desc__service">
+                                    <img src="../../../public/map-gray.png" alt="">
+                                    <p>Завтраки</p>
+                                </div>
+                            </div>
+                            <div class="content-services__row">
+                                <div class="content-desc__service">
+                                    <img src="../../../public/gid-gray.svg" alt="">
+                                    <p>Гид</p>
+                                </div>
+
+                                <div class="content-desc__service">
+                                    <img src="../../../public/family-gray.png" alt="">
+                                    <p>Незабываемые впечатления</p>
+                                </div>
+
+                                <div class="content-desc__service">
+                                    <img src="../../../public/map-gray.png" alt="">
+                                    <p>Экскурсии</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tour-details__dates bluebg">
+                <div class="tour-content__block content-dates__block">
+                    <h3 class="tour-content__title">Даты набора групп
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </h3>
+                    <div class="tour-content__inner">
+                        <div class="tour-dates__form__search">
+                            <form class="search-form">
+                                <div class="booking-form__dates booking-form__item">
+                                    <div class="form-item__body">
+                                        <label for="tour-dates" class="form-item__label">Даты тура</label>
+                                        <input
+                                                id="tour-dates"
+                                                class="form-item__input"
+                                                value="2018-07-22"
+                                                type="date">
+                                    </div>
+                                    <img alt="" src="../../../public/calendar.svg">
+                                </div>
+                                <div class="booking-form__people booking-form__item">
+                                    <img alt="" src="../../../public/users.svg">
+                                    <div class="form-item__body">
+                                        <div class="form-item__label">Количество человек</div>
+                                        <label for="torurists-count-select"></label>
+                                        <select id="torurists-count-select" class="form-item__select form-select">
+                                            <option value="2">4 взрослых</option>
+                                            <option value="3">3 взрослых</option>
+                                            <option value="2">2 взрослых</option>
+                                            <option value="1">1 взрослый</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tour-dates__offers">
+                            <div class="tour-dates__offer">
+                                <div class="tour-offer__content">
+                                    <div class="offer-content__info">
+                                        <div class="offer-content__maininfo">
+                                            <p class="offer-info__title">Лучшая Московская гостиница </p>
+                                            <div class="offer-info__rating">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#D9D9D9"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="offer-content__services">
+                                            <p class="offer-service">
+                                                <span class="offer-service__title">Расположение</span>
+                                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5L6 1.5L10.5 5V10.5C10.5 11.0523 10.0523 11.5 9.5 11.5H2.5C1.94772 11.5 1.5 11.0523 1.5 10.5V5Z" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.5 11.5V6.5H7.5V11.5" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="offer-service__value">Экстра класс</span>
+                                            </p>
+                                            <p class="offer-service">
+                                            <span class="offer-service__title">Питание</span>
+                                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11.5C8.76142 11.5 11 9.26142 11 6.5C11 3.73858 8.76142 1.5 6 1.5C3.23858 1.5 1 3.73858 1 6.5C1 9.26142 3.23858 11.5 6 11.5Z" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.15527 4.5L10.0253 9.47" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.84473 4.5H10.5847" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.69043 6.50003L6.56043 1.53003" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.84461 8.50003L1.97461 3.53003" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.15504 8.5H1.41504" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.31043 6.5L5.44043 11.47" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="offer-service__value">Все включено, Шведский стол</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="offer-content__params">
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Город</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10V10Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">Санкт-Петербург</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Даты</span>
+                                             <span class="offer-param__img__wrapper">
+                                               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35742 5.33325C3.35742 4.22868 4.25285 3.33325 5.35742 3.33325H16.3574C17.462 3.33325 18.3574 4.22868 18.3574 5.33325V16.3333C18.3574 17.4378 17.462 18.3333 16.3574 18.3333H5.35742C4.25285 18.3333 3.35742 17.4378 3.35742 16.3333V5.33325Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M14.1909 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M7.52393 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M3.35742 8.33325H18.3574" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                               </svg>
+                                            </span>
+                                            <span class="offer-param__value">30.12.2023 - 2.01.2024</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Продолжительность</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.4987 14.6666C12.1806 14.6666 15.1654 11.6819 15.1654 7.99998C15.1654 4.31808 12.1806 1.33331 8.4987 1.33331C4.8168 1.33331 1.83203 4.31808 1.83203 7.99998C1.83203 11.6819 4.8168 14.6666 8.4987 14.6666Z" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.5 4V8L10.5 10" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">4 дня</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Гости</span>
+                                             <span class="offer-param__img__wrapper">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23 20.9999V18.9999C22.9986 17.177 21.765 15.5856 20 15.1299" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M16 3.12988C17.7699 3.58305 19.0078 5.17787 19.0078 7.00488C19.0078 8.83189 17.7699 10.4267 16 10.8799" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">2 взр + 1 реб</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <button class="button-secondary tour-offer__button">
+                                    <span class="button-offer__price">119 950 ₽</span>
+                                    <span class="button-offer__title">Бронировать</span>
+                                </button>
+                            </div>
+                            <div class="tour-dates__offer">
+                                <div class="tour-offer__content">
+                                    <div class="offer-content__info">
+                                        <div class="offer-content__maininfo">
+                                            <p class="offer-info__title">Лучшая Московская гостиница </p>
+                                            <div class="offer-info__rating">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#D9D9D9"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="offer-content__services">
+                                            <p class="offer-service">
+                                                <span class="offer-service__title">Расположение</span>
+                                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5L6 1.5L10.5 5V10.5C10.5 11.0523 10.0523 11.5 9.5 11.5H2.5C1.94772 11.5 1.5 11.0523 1.5 10.5V5Z" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.5 11.5V6.5H7.5V11.5" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="offer-service__value">Экстра класс</span>
+                                            </p>
+                                            <p class="offer-service">
+                                                <span class="offer-service__title">Питание</span>
+                                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11.5C8.76142 11.5 11 9.26142 11 6.5C11 3.73858 8.76142 1.5 6 1.5C3.23858 1.5 1 3.73858 1 6.5C1 9.26142 3.23858 11.5 6 11.5Z" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.15527 4.5L10.0253 9.47" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.84473 4.5H10.5847" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.69043 6.50003L6.56043 1.53003" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.84461 8.50003L1.97461 3.53003" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.15504 8.5H1.41504" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.31043 6.5L5.44043 11.47" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="offer-service__value">Все включено, Шведский стол</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="offer-content__params">
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Город</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10V10Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">Санкт-Петербург</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Даты</span>
+                                            <span class="offer-param__img__wrapper">
+                                               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35742 5.33325C3.35742 4.22868 4.25285 3.33325 5.35742 3.33325H16.3574C17.462 3.33325 18.3574 4.22868 18.3574 5.33325V16.3333C18.3574 17.4378 17.462 18.3333 16.3574 18.3333H5.35742C4.25285 18.3333 3.35742 17.4378 3.35742 16.3333V5.33325Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M14.1909 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M7.52393 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M3.35742 8.33325H18.3574" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                               </svg>
+                                            </span>
+                                            <span class="offer-param__value">30.12.2023 - 2.01.2024</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Продолжительность</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.4987 14.6666C12.1806 14.6666 15.1654 11.6819 15.1654 7.99998C15.1654 4.31808 12.1806 1.33331 8.4987 1.33331C4.8168 1.33331 1.83203 4.31808 1.83203 7.99998C1.83203 11.6819 4.8168 14.6666 8.4987 14.6666Z" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.5 4V8L10.5 10" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">4 дня</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Гости</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23 20.9999V18.9999C22.9986 17.177 21.765 15.5856 20 15.1299" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M16 3.12988C17.7699 3.58305 19.0078 5.17787 19.0078 7.00488C19.0078 8.83189 17.7699 10.4267 16 10.8799" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">2 взр + 1 реб</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <button class="button-secondary tour-offer__button">
+                                    <span class="button-offer__price">119 950 ₽</span>
+                                    <span class="button-offer__title">Бронировать</span>
+                                </button>
+                            </div>
+                            <div class="tour-dates__offer">
+                                <div class="tour-offer__content">
+                                    <div class="offer-content__info">
+                                        <div class="offer-content__maininfo">
+                                            <p class="offer-info__title">Лучшая Московская гостиница </p>
+                                            <div class="offer-info__rating">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#D9D9D9"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="offer-content__services">
+                                            <p class="offer-service">
+                                                <span class="offer-service__title">Расположение</span>
+                                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5L6 1.5L10.5 5V10.5C10.5 11.0523 10.0523 11.5 9.5 11.5H2.5C1.94772 11.5 1.5 11.0523 1.5 10.5V5Z" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.5 11.5V6.5H7.5V11.5" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="offer-service__value">Экстра класс</span>
+                                            </p>
+                                            <p class="offer-service">
+                                                <span class="offer-service__title">Питание</span>
+                                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11.5C8.76142 11.5 11 9.26142 11 6.5C11 3.73858 8.76142 1.5 6 1.5C3.23858 1.5 1 3.73858 1 6.5C1 9.26142 3.23858 11.5 6 11.5Z" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.15527 4.5L10.0253 9.47" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.84473 4.5H10.5847" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.69043 6.50003L6.56043 1.53003" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.84461 8.50003L1.97461 3.53003" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.15504 8.5H1.41504" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.31043 6.5L5.44043 11.47" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="offer-service__value">Все включено, Шведский стол</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="offer-content__params">
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Город</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10V10Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">Санкт-Петербург</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Даты</span>
+                                            <span class="offer-param__img__wrapper">
+                                               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35742 5.33325C3.35742 4.22868 4.25285 3.33325 5.35742 3.33325H16.3574C17.462 3.33325 18.3574 4.22868 18.3574 5.33325V16.3333C18.3574 17.4378 17.462 18.3333 16.3574 18.3333H5.35742C4.25285 18.3333 3.35742 17.4378 3.35742 16.3333V5.33325Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M14.1909 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M7.52393 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M3.35742 8.33325H18.3574" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                               </svg>
+                                            </span>
+                                            <span class="offer-param__value">30.12.2023 - 2.01.2024</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Продолжительность</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.4987 14.6666C12.1806 14.6666 15.1654 11.6819 15.1654 7.99998C15.1654 4.31808 12.1806 1.33331 8.4987 1.33331C4.8168 1.33331 1.83203 4.31808 1.83203 7.99998C1.83203 11.6819 4.8168 14.6666 8.4987 14.6666Z" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.5 4V8L10.5 10" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">4 дня</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Гости</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23 20.9999V18.9999C22.9986 17.177 21.765 15.5856 20 15.1299" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M16 3.12988C17.7699 3.58305 19.0078 5.17787 19.0078 7.00488C19.0078 8.83189 17.7699 10.4267 16 10.8799" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">2 взр + 1 реб</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <button class="button-secondary tour-offer__button">
+                                    <span class="button-offer__price">119 950 ₽</span>
+                                    <span class="button-offer__title">Бронировать</span>
+                                </button>
+                            </div>
+                            <div class="tour-dates__offer">
+                                <div class="tour-offer__content">
+                                    <div class="offer-content__info">
+                                        <div class="offer-content__maininfo">
+                                            <p class="offer-info__title">Лучшая Московская гостиница </p>
+                                            <div class="offer-info__rating">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#D9D9D9"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="offer-content__services">
+                                            <p class="offer-service">
+                                                <span class="offer-service__title">Расположение</span>
+                                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5L6 1.5L10.5 5V10.5C10.5 11.0523 10.0523 11.5 9.5 11.5H2.5C1.94772 11.5 1.5 11.0523 1.5 10.5V5Z" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.5 11.5V6.5H7.5V11.5" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="offer-service__value">Экстра класс</span>
+                                            </p>
+                                            <p class="offer-service">
+                                                <span class="offer-service__title">Питание</span>
+                                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11.5C8.76142 11.5 11 9.26142 11 6.5C11 3.73858 8.76142 1.5 6 1.5C3.23858 1.5 1 3.73858 1 6.5C1 9.26142 3.23858 11.5 6 11.5Z" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.15527 4.5L10.0253 9.47" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.84473 4.5H10.5847" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.69043 6.50003L6.56043 1.53003" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.84461 8.50003L1.97461 3.53003" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.15504 8.5H1.41504" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.31043 6.5L5.44043 11.47" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="offer-service__value">Все включено, Шведский стол</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="offer-content__params">
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Город</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10V10Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">Санкт-Петербург</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Даты</span>
+                                            <span class="offer-param__img__wrapper">
+                                               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35742 5.33325C3.35742 4.22868 4.25285 3.33325 5.35742 3.33325H16.3574C17.462 3.33325 18.3574 4.22868 18.3574 5.33325V16.3333C18.3574 17.4378 17.462 18.3333 16.3574 18.3333H5.35742C4.25285 18.3333 3.35742 17.4378 3.35742 16.3333V5.33325Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M14.1909 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M7.52393 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M3.35742 8.33325H18.3574" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                               </svg>
+                                            </span>
+                                            <span class="offer-param__value">30.12.2023 - 2.01.2024</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Продолжительность</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.4987 14.6666C12.1806 14.6666 15.1654 11.6819 15.1654 7.99998C15.1654 4.31808 12.1806 1.33331 8.4987 1.33331C4.8168 1.33331 1.83203 4.31808 1.83203 7.99998C1.83203 11.6819 4.8168 14.6666 8.4987 14.6666Z" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.5 4V8L10.5 10" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">4 дня</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Гости</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23 20.9999V18.9999C22.9986 17.177 21.765 15.5856 20 15.1299" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M16 3.12988C17.7699 3.58305 19.0078 5.17787 19.0078 7.00488C19.0078 8.83189 17.7699 10.4267 16 10.8799" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">2 взр + 1 реб</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <button class="button-secondary tour-offer__button">
+                                    <span class="button-offer__price">119 950 ₽</span>
+                                    <span class="button-offer__title">Бронировать</span>
+                                </button>
+                            </div>
+                            <div class="tour-dates__offer">
+                                <div class="tour-offer__content">
+                                    <div class="offer-content__info">
+                                        <div class="offer-content__maininfo">
+                                            <p class="offer-info__title">Лучшая Московская гостиница </p>
+                                            <div class="offer-info__rating">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#D9D9D9"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="offer-content__services">
+                                            <p class="offer-service">
+                                                <span class="offer-service__title">Расположение</span>
+                                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5L6 1.5L10.5 5V10.5C10.5 11.0523 10.0523 11.5 9.5 11.5H2.5C1.94772 11.5 1.5 11.0523 1.5 10.5V5Z" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.5 11.5V6.5H7.5V11.5" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="offer-service__value">Экстра класс</span>
+                                            </p>
+                                            <p class="offer-service">
+                                                <span class="offer-service__title">Питание</span>
+                                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11.5C8.76142 11.5 11 9.26142 11 6.5C11 3.73858 8.76142 1.5 6 1.5C3.23858 1.5 1 3.73858 1 6.5C1 9.26142 3.23858 11.5 6 11.5Z" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.15527 4.5L10.0253 9.47" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.84473 4.5H10.5847" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.69043 6.50003L6.56043 1.53003" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.84461 8.50003L1.97461 3.53003" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.15504 8.5H1.41504" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.31043 6.5L5.44043 11.47" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="offer-service__value">Все включено, Шведский стол</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="offer-content__params">
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Город</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10V10Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">Санкт-Петербург</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Даты</span>
+                                            <span class="offer-param__img__wrapper">
+                                               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35742 5.33325C3.35742 4.22868 4.25285 3.33325 5.35742 3.33325H16.3574C17.462 3.33325 18.3574 4.22868 18.3574 5.33325V16.3333C18.3574 17.4378 17.462 18.3333 16.3574 18.3333H5.35742C4.25285 18.3333 3.35742 17.4378 3.35742 16.3333V5.33325Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M14.1909 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M7.52393 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M3.35742 8.33325H18.3574" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                               </svg>
+                                            </span>
+                                            <span class="offer-param__value">30.12.2023 - 2.01.2024</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Продолжительность</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.4987 14.6666C12.1806 14.6666 15.1654 11.6819 15.1654 7.99998C15.1654 4.31808 12.1806 1.33331 8.4987 1.33331C4.8168 1.33331 1.83203 4.31808 1.83203 7.99998C1.83203 11.6819 4.8168 14.6666 8.4987 14.6666Z" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.5 4V8L10.5 10" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">4 дня</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Гости</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23 20.9999V18.9999C22.9986 17.177 21.765 15.5856 20 15.1299" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M16 3.12988C17.7699 3.58305 19.0078 5.17787 19.0078 7.00488C19.0078 8.83189 17.7699 10.4267 16 10.8799" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">2 взр + 1 реб</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <button class="button-secondary tour-offer__button">
+                                    <span class="button-offer__price">119 950 ₽</span>
+                                    <span class="button-offer__title">Бронировать</span>
+                                </button>
+                            </div>
+                            <div class="tour-dates__offer">
+                                <div class="tour-offer__content">
+                                    <div class="offer-content__info">
+                                        <div class="offer-content__maininfo">
+                                            <p class="offer-info__title">Лучшая Московская гостиница </p>
+                                            <div class="offer-info__rating">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#D9D9D9"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="offer-content__services">
+                                            <p class="offer-service">
+                                                <span class="offer-service__title">Расположение</span>
+                                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5L6 1.5L10.5 5V10.5C10.5 11.0523 10.0523 11.5 9.5 11.5H2.5C1.94772 11.5 1.5 11.0523 1.5 10.5V5Z" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.5 11.5V6.5H7.5V11.5" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="offer-service__value">Экстра класс</span>
+                                            </p>
+                                            <p class="offer-service">
+                                                <span class="offer-service__title">Питание</span>
+                                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11.5C8.76142 11.5 11 9.26142 11 6.5C11 3.73858 8.76142 1.5 6 1.5C3.23858 1.5 1 3.73858 1 6.5C1 9.26142 3.23858 11.5 6 11.5Z" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.15527 4.5L10.0253 9.47" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.84473 4.5H10.5847" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.69043 6.50003L6.56043 1.53003" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.84461 8.50003L1.97461 3.53003" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.15504 8.5H1.41504" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.31043 6.5L5.44043 11.47" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="offer-service__value">Все включено, Шведский стол</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="offer-content__params">
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Город</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10V10Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">Санкт-Петербург</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Даты</span>
+                                            <span class="offer-param__img__wrapper">
+                                               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35742 5.33325C3.35742 4.22868 4.25285 3.33325 5.35742 3.33325H16.3574C17.462 3.33325 18.3574 4.22868 18.3574 5.33325V16.3333C18.3574 17.4378 17.462 18.3333 16.3574 18.3333H5.35742C4.25285 18.3333 3.35742 17.4378 3.35742 16.3333V5.33325Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M14.1909 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M7.52393 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M3.35742 8.33325H18.3574" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                               </svg>
+                                            </span>
+                                            <span class="offer-param__value">30.12.2023 - 2.01.2024</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Продолжительность</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.4987 14.6666C12.1806 14.6666 15.1654 11.6819 15.1654 7.99998C15.1654 4.31808 12.1806 1.33331 8.4987 1.33331C4.8168 1.33331 1.83203 4.31808 1.83203 7.99998C1.83203 11.6819 4.8168 14.6666 8.4987 14.6666Z" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.5 4V8L10.5 10" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">4 дня</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Гости</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23 20.9999V18.9999C22.9986 17.177 21.765 15.5856 20 15.1299" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M16 3.12988C17.7699 3.58305 19.0078 5.17787 19.0078 7.00488C19.0078 8.83189 17.7699 10.4267 16 10.8799" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">2 взр + 1 реб</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <button class="button-secondary tour-offer__button">
+                                    <span class="button-offer__price">119 950 ₽</span>
+                                    <span class="button-offer__title">Бронировать</span>
+                                </button>
+                            </div>
+                            <div class="tour-dates__offer">
+                                <div class="tour-offer__content">
+                                    <div class="offer-content__info">
+                                        <div class="offer-content__maininfo">
+                                            <p class="offer-info__title">Лучшая Московская гостиница </p>
+                                            <div class="offer-info__rating">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#FDD607"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#D9D9D9"/>
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1L7.545 4.13L11 4.635L8.5 7.07L9.09 10.51L6 8.885L2.91 10.51L3.5 7.07L1 4.635L4.455 4.13L6 1Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="offer-content__services">
+                                            <p class="offer-service">
+                                                <span class="offer-service__title">Расположение</span>
+                                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5L6 1.5L10.5 5V10.5C10.5 11.0523 10.0523 11.5 9.5 11.5H2.5C1.94772 11.5 1.5 11.0523 1.5 10.5V5Z" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.5 11.5V6.5H7.5V11.5" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="offer-service__value">Экстра класс</span>
+                                            </p>
+                                            <p class="offer-service">
+                                                <span class="offer-service__title">Питание</span>
+                                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11.5C8.76142 11.5 11 9.26142 11 6.5C11 3.73858 8.76142 1.5 6 1.5C3.23858 1.5 1 3.73858 1 6.5C1 9.26142 3.23858 11.5 6 11.5Z" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.15527 4.5L10.0253 9.47" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.84473 4.5H10.5847" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M3.69043 6.50003L6.56043 1.53003" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4.84461 8.50003L1.97461 3.53003" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.15504 8.5H1.41504" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.31043 6.5L5.44043 11.47" stroke="#2F7FED" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="offer-service__value">Все включено, Шведский стол</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="offer-content__params">
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Город</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10V10Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">Санкт-Петербург</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Даты</span>
+                                            <span class="offer-param__img__wrapper">
+                                               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35742 5.33325C3.35742 4.22868 4.25285 3.33325 5.35742 3.33325H16.3574C17.462 3.33325 18.3574 4.22868 18.3574 5.33325V16.3333C18.3574 17.4378 17.462 18.3333 16.3574 18.3333H5.35742C4.25285 18.3333 3.35742 17.4378 3.35742 16.3333V5.33325Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M14.1909 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M7.52393 1.66675V5.00008" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M3.35742 8.33325H18.3574" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                               </svg>
+                                            </span>
+                                            <span class="offer-param__value">30.12.2023 - 2.01.2024</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Продолжительность</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.4987 14.6666C12.1806 14.6666 15.1654 11.6819 15.1654 7.99998C15.1654 4.31808 12.1806 1.33331 8.4987 1.33331C4.8168 1.33331 1.83203 4.31808 1.83203 7.99998C1.83203 11.6819 4.8168 14.6666 8.4987 14.6666Z" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.5 4V8L10.5 10" stroke="#A0A3BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">4 дня</span>
+                                        </p>
+                                        <p class="offer-content__param">
+                                            <span class="offer-param__title">Гости</span>
+                                            <span class="offer-param__img__wrapper">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M23 20.9999V18.9999C22.9986 17.177 21.765 15.5856 20 15.1299" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M16 3.12988C17.7699 3.58305 19.0078 5.17787 19.0078 7.00488C19.0078 8.83189 17.7699 10.4267 16 10.8799" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="offer-param__value">2 взр + 1 реб</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <button class="button-secondary tour-offer__button">
+                                    <span class="button-offer__price">119 950 ₽</span>
+                                    <span class="button-offer__title">Бронировать</span>
+                                </button>
+                            </div>
+                            <span class="tour-dates__offers__showmore">
+                                Показать еще
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tour-details__program bluebg">
+                <div class="tour-content__block content-program__block">
+                    <h3 class="tour-content__title">
+                        Программа тура по дням
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </h3>
+                    <div class="tour-content__subtitle">
+                        <p>Прибытие в гостиницу самостоятельно.</p>
+                        <p>Размещение после экскурсионного обслуживания (с 14:00).</p>
+                    </div>
+                    <div class="tour-content__inner">
+                        <div class="tour-program">
+                            <div class="tour-program__item tour-program__item__active">
+                                <div class="tour-program__title">
+                                    <h4>1 день (пятница)</h4>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4V20" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18 14L12 20L6 14" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="tour-program__content">
+                                    <h4 class="content__title">Третьяковская галерея</h4>
+                                    <div class="program-content__days">
+                                        <div class="program-content__day">
+                                            <div class="program-day__time">
+                                                <p class="time-dot__wrapper">
+                                                    <span class="time-dot"></span>
+                                                </p>
+                                                9:00
+                                            </div>
+                                            <div class="program-day__title content__title">
+                                                Встреча с представителем турфирмы
+                                            </div>
+                                            <div class="program-day__content">
+                                                <p>Встреча с представителем турфирмы в холле гостиницы с табличкой «Тари Тур»
+                                                    (контактный телефон: 8-929-684-55-54). Получение уточненных экскурсионных программ.
+                                                    Приобретение дополнительных экскурсий.</p>
+                                                <p>Отъезд от гостиницы на автобусе.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="program-content__day">
+                                            <div class="program-day__time">
+                                                <p class="time-dot__wrapper">
+                                                    <span class="time-dot"></span>
+                                                </p>
+                                                10:30
+                                            </div>
+                                            <div class="program-day__title content__title">
+                                                Отъезд от гостиницы на автобусе
+                                            </div>
+                                            <div class="program-day__content">
+                                                <p>Отъезд от гостиницы на автобусе.</p>
+                                                <p>10:30 от отеля Максима Заря</p>
+                                                <p>11:00 от отеля Космос</p>
+                                                <p>11:10 - от отеля YE's</p>
+                                                <p>11:20 от отеля Холидей Инн Сущевский</p>
+                                                <p>11:40 от отеля Холидей Инн Лесная</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="program-content__day">
+                                            <div class="program-day__time">
+                                                <p class="time-dot__wrapper">
+                                                    <span class="time-dot"></span>
+                                                </p>
+                                                14:30
+                                            </div>
+                                            <div class="program-day__title content__title">
+                                                Экскурсия по Замоскворечью
+                                            </div>
+                                            <div class="program-day__content">
+                                                <p>Замоскворечье – исторический район старой Москвы - настоящий музей-заповедник под открытым небом,
+                                                    один из немногих районов в Москве, где сохранился дух старого города.
+                                                    Вы узнаете, как и почему именно в Замоскворечье появилась Третьяковская галерея,
+                                                    а также услышите и многие другие занимательные факты из истории Замоскворечья и,
+                                                    конечно же, полюбуетесь купеческими особняками и прекрасными храмами, которые издревле украшают этот район.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="program-content__day">
+                                            <div class="program-day__time">
+                                                <p class="time-dot__wrapper">
+                                                    <span class="time-dot"></span>
+                                                </p>
+                                                16:30
+                                            </div>
+                                            <div class="program-day__title content__title">
+                                                Экскурсия в Третьяковскую галерею.
+                                            </div>
+                                            <div class="program-day__content">
+                                                <p>Вы посетите Новую Третьяковскую галерею, расположенную на Крымском Валу,
+                                                    где сможете увидеть работы Казимира Малевича, Марка Шагала, Василия Кандинского и многих других.
+                                                    В состав музея входят более 5000 произведений искусства ХХ-ХХI веков, представляющие такие
+                                                    направления, как русский авангард, андеграунд, социалистический реализм, сюрреализм,
+                                                    а также новейшие течения. Здесь вы прочувствуете все величие русской культуры в сопровождении
+                                                    лучших гидов.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="program-content__day">
+                                            <div class="program-day__time">
+                                                <p class="time-dot__wrapper">
+                                                    <span class="time-dot"></span>
+                                                </p>
+                                                16:30
+                                            </div>
+                                            <div class="program-day__title content__title">
+                                                Окончание программы
+                                            </div>
+                                            <div class="program-day__content">
+                                                <p>Окончание программы в центре города не позднее 17:00
+                                                    Самостоятельное возвращение в гостиницу.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tour-program__item">
+                                <div class="tour-program__title">
+                                    <h4>2 день (суббота)</h4>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4V20" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18 14L12 20L6 14" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="tour-program__item">
+                                <div class="tour-program__title">
+                                    <h4>3 день (Воскресенье)</h4>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4V20" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18 14L12 20L6 14" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="tour-details__includes">
+                <div class="tour-content__block content-include__block">
+                    <h3 class="tour-content__title">
+                        Что входит в экскурсию
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </h3>
+                    <div class="tour-content__inner">
+                        <div class="tour-content__includes">
+                            <div class="tour-includes__item__wrapper tour-includes__success">
+                                <h4 class="tour-includes__title">Входит в стоимость</h4>
+                                <ul class="tour-includes__items">
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.1654 5.83325L7.9987 14.9999L3.83203 10.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Проживание в выбранном отеле</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.1654 5.83325L7.9987 14.9999L3.83203 10.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>4 завтрака</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.1654 5.83325L7.9987 14.9999L3.83203 10.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Экскурсионное обслуживание</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.1654 5.83325L7.9987 14.9999L3.83203 10.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Входные билеты с экскурсией в музее</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.1654 5.83325L7.9987 14.9999L3.83203 10.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Автобус по программе (отъезд от гостиницы)</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.1654 5.83325L7.9987 14.9999L3.83203 10.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Московский Кремль (территория)</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.1654 5.83325L7.9987 14.9999L3.83203 10.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                       <p>Московский Кремль (территория)</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.1654 5.83325L7.9987 14.9999L3.83203 10.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Прогулка по парку Зарядье. Атракцион над Россией.</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.1654 5.83325L7.9987 14.9999L3.83203 10.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Автобусная обзорная экскурсия по городу</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.1654 5.83325L7.9987 14.9999L3.83203 10.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Третьяковская галерея</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.1654 5.83325L7.9987 14.9999L3.83203 10.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Красная площадь</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.1654 5.83325L7.9987 14.9999L3.83203 10.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Музей-усадьба Коломенское</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tour-includes__item__wrapper tour-includes__excluded">
+                                <h4 class="tour-includes__title">Не входит в стоимость</h4>
+                                <ul class="tour-includes__items">
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99967 15.1667C11.6816 15.1667 14.6663 12.1819 14.6663 8.50004C14.6663 4.81814 11.6816 1.83337 7.99967 1.83337C4.31778 1.83337 1.33301 4.81814 1.33301 8.50004C1.33301 12.1819 4.31778 15.1667 7.99967 15.1667Z" stroke="#FF511F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10 6.5L6 10.5" stroke="#FF511F" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                                <path d="M6 6.5L10 10.5" stroke="#FF511F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Проезд до Москвы и обратно</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99967 15.1667C11.6816 15.1667 14.6663 12.1819 14.6663 8.50004C14.6663 4.81814 11.6816 1.83337 7.99967 1.83337C4.31778 1.83337 1.33301 4.81814 1.33301 8.50004C1.33301 12.1819 4.31778 15.1667 7.99967 15.1667Z" stroke="#FF511F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10 6.5L6 10.5" stroke="#FF511F" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                                <path d="M6 6.5L10 10.5" stroke="#FF511F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Встреча/проводы на вокзалеаэропорту</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99967 15.1667C11.6816 15.1667 14.6663 12.1819 14.6663 8.50004C14.6663 4.81814 11.6816 1.83337 7.99967 1.83337C4.31778 1.83337 1.33301 4.81814 1.33301 8.50004C1.33301 12.1819 4.31778 15.1667 7.99967 15.1667Z" stroke="#FF511F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10 6.5L6 10.5" stroke="#FF511F" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                                <path d="M6 6.5L10 10.5" stroke="#FF511F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Доп. ночи</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99967 15.1667C11.6816 15.1667 14.6663 12.1819 14.6663 8.50004C14.6663 4.81814 11.6816 1.83337 7.99967 1.83337C4.31778 1.83337 1.33301 4.81814 1.33301 8.50004C1.33301 12.1819 4.31778 15.1667 7.99967 15.1667Z" stroke="#FF511F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10 6.5L6 10.5" stroke="#FF511F" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                                <path d="M6 6.5L10 10.5" stroke="#FF511F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Камера хранения на вокзале</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99967 15.1667C11.6816 15.1667 14.6663 12.1819 14.6663 8.50004C14.6663 4.81814 11.6816 1.83337 7.99967 1.83337C4.31778 1.83337 1.33301 4.81814 1.33301 8.50004C1.33301 12.1819 4.31778 15.1667 7.99967 15.1667Z" stroke="#FF511F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10 6.5L6 10.5" stroke="#FF511F" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                                <path d="M6 6.5L10 10.5" stroke="#FF511F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Доп. экскурсии (по желанию)</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99967 15.1667C11.6816 15.1667 14.6663 12.1819 14.6663 8.50004C14.6663 4.81814 11.6816 1.83337 7.99967 1.83337C4.31778 1.83337 1.33301 4.81814 1.33301 8.50004C1.33301 12.1819 4.31778 15.1667 7.99967 15.1667Z" stroke="#FF511F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10 6.5L6 10.5" stroke="#FF511F" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                                <path d="M6 6.5L10 10.5" stroke="#FF511F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Обеды и ужины (самостоятельно)</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tour-includes__item__wrapper tour-includes__optional">
+                                <h4 class="tour-includes__title">Опционально</h4>
+                                <ul class="tour-includes__items">
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33366 1.33337H4.00033C3.26395 1.33337 2.66699 1.93033 2.66699 2.66671V13.3334C2.66699 14.0698 3.26395 14.6667 4.00033 14.6667H12.0003C12.7367 14.6667 13.3337 14.0698 13.3337 13.3334V5.33337L9.33366 1.33337Z" stroke="#F7D401" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                                <path d="M9.33301 1.33337V5.33337H13.333" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.6663 8.66663H5.33301" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.6663 11.3334H5.33301" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M6.66634 6H5.99967H5.33301" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Встреча (или проводы) на
+                                            вокзале или в аэропорту:   ж/д
+                                            вокзал-отель - 1000 руб /машина,
+                                            аэропорт отель-3000 руб</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33366 1.33337H4.00033C3.26395 1.33337 2.66699 1.93033 2.66699 2.66671V13.3334C2.66699 14.0698 3.26395 14.6667 4.00033 14.6667H12.0003C12.7367 14.6667 13.3337 14.0698 13.3337 13.3334V5.33337L9.33366 1.33337Z" stroke="#F7D401" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                                <path d="M9.33301 1.33337V5.33337H13.333" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.6663 8.66663H5.33301" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.6663 11.3334H5.33301" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M6.66634 6H5.99967H5.33301" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Дополнительные экскурсии из
+                                            нашего каталога</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33366 1.33337H4.00033C3.26395 1.33337 2.66699 1.93033 2.66699 2.66671V13.3334C2.66699 14.0698 3.26395 14.6667 4.00033 14.6667H12.0003C12.7367 14.6667 13.3337 14.0698 13.3337 13.3334V5.33337L9.33366 1.33337Z" stroke="#F7D401" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                                <path d="M9.33301 1.33337V5.33337H13.333" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.6663 8.66663H5.33301" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.6663 11.3334H5.33301" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M6.66634 6H5.99967H5.33301" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Речные прогулки, Билеты в театр, цирк</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33366 1.33337H4.00033C3.26395 1.33337 2.66699 1.93033 2.66699 2.66671V13.3334C2.66699 14.0698 3.26395 14.6667 4.00033 14.6667H12.0003C12.7367 14.6667 13.3337 14.0698 13.3337 13.3334V5.33337L9.33366 1.33337Z" stroke="#F7D401" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                                <path d="M9.33301 1.33337V5.33337H13.333" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.6663 8.66663H5.33301" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.6663 11.3334H5.33301" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M6.66634 6H5.99967H5.33301" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Вы можете продлить ваше
+                                            пребывание в Москве на любое
+                                            количество дней.</p>
+                                    </li>
+                                    <li class="tour-includes__item">
+                                        <div class="tour-includes__item__image">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33366 1.33337H4.00033C3.26395 1.33337 2.66699 1.93033 2.66699 2.66671V13.3334C2.66699 14.0698 3.26395 14.6667 4.00033 14.6667H12.0003C12.7367 14.6667 13.3337 14.0698 13.3337 13.3334V5.33337L9.33366 1.33337Z" stroke="#F7D401" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                                <path d="M9.33301 1.33337V5.33337H13.333" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.6663 8.66663H5.33301" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.6663 11.3334H5.33301" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M6.66634 6H5.99967H5.33301" stroke="#F6D401" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <p>Мы забронируем дополнительные экскурсионную программу при
+                                            ‘необходимости</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <section class="support">
+        <div class="support-wrapper">
+            <div class="support-close"></div>
+            <div class="support-form__wrapper">
+                <h2 class="support-from__title">Сложно выбрать тур?</h2>
+                <p class="support-from__subtitle">Оставьте заявку и получите консультацию и подборку туров от экспертов Тари Тур</p>
+                <form class="support-form">
+                    <div class="input-block">
+                        <div class="input-block__icon">
+                            <img src="../../../public/feathericon--user.svg" alt="">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="nameInput">Имя</label>
+                            <input id="nameInput" name="nameInput" type="text">
+                        </div>
+                    </div>
+                    <div class="input-block">
+                        <div class="input-block__icon">
+                            <img src="../../../public/phone.svg" alt="">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="phoneInput">Номер телефона</label>
+                            <input id="phoneInput" name="phoneInput" type="text">
+                        </div>
+                    </div>
+                    <div class="input-block input-block__full">
+                        <div class="input-block__icon">
+                            <img src="../../../public/message-circle.svg" alt="">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="supportBody">Куда хотите поехать?</label>
+                            <textarea id="supportBody" rows="4" class="support-textarea" name="supportBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea....</textarea>
+                        </div>
+                    </div>
+                    <button class="support-submit button-primary">
+                        <img src="../../../public/arrow-right__white.svg" alt="">
+                        Оставить заявку
+                    </button>
+                </form>
+            </div>
+            <div class="support-image">
+                <img src="../../../public/support.png" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="footer-subscribe">
+            <div class="subscribe-title">
+                <h3 class="subscribe-heading3">Будьте в курсе !</h3>
+                <p>Подпишитесь! Подарки, скидки, розыгрыши
+                    призов, новые экскурсии, туры!</p>
+            </div>
+            <div class="subscribe-action">
+                <div class="input-block">
+                    <div class="input-block__icon">
+                        <img src="../../../public/mail.svg" alt="">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="subscribe">E-mail</label>
+                        <input id="subscribe" name="nameInput" type="text">
+                    </div>
+                </div>
+                <button class="button-secondary"><b class="button3">Подписаться</b></button>
+            </div>
+
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-list footer-head">
+                <div class="footer-logo">
+                    <div class="footer-logo__image">
+                        <img src="../../../public/logo_invert.svg" alt="">
+                    </div>
+                    <div class="footer-logo__desc">
+                        <b class="logo-desc__title">Работаем с 1993 года</b>
+                        <p class="logo-desc__subtitle">ООО "Компания Тари Тур"
+                            117449 г. Москва ул. Винокурова, 2</p>
+                    </div>
+                </div>
+                <div class="footer-socials">
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="../../../public/vk_small.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="../../../public/yt_small.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="../../../public/tg_small.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-mail">
+                    <a class="footer-main__link" href="mailto:testmail@gmail.com">
+                        <img src="../../../public/mail.svg" alt="">
+                        <b>ttour@tari.ru</b>
+                    </a>
+                </div>
+                <div class="footer-phones">
+                    <span class="phone">8 800-302-54-91</span>
+                    <span class="phone">+7 495-777-90-15</span>
+                </div>
+            </div>
+            <div class="footer-list footer-body">
+                <div class="footer-body__content">
+                    <div class="footer-body__group">
+                        <p class="footer-body__title footer-body__title__opened">Туры в Москву </p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">Туры в Санкт-петербург</a></li>
+                            <li class="group-list__item"><a href="#">Все туры</a></li>
+                            <li class="group-list__item"><a href="#">Экскурсии</a></li>
+                            <li class="group-list__item"><a href="#">Календарь туров</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-body__group">
+                        <p class="footer-body__title">Услуги</p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">О компании</a></li>
+                            <li class="group-list__item"><a href="#">Контакты</a></li>
+                            <li class="group-list__item"><a href="#">Отели</a></li>
+                            <li class="group-list__item"><a href="#">Подарочный сертификат</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-body__group">
+                        <p class="footer-body__title">Туристам</p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">Договор с туристом</a></li>
+                            <li class="group-list__item"><a href="#">Как купить тур</a></li>
+                            <li class="group-list__item"><a href="#">Блог</a></li>
+                            <li class="group-list__item"><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-body__group">
+                        <p class="footer-body__title">Агентствам</p>
+                        <ul class="footer-group__list">
+                            <li class="group-list__item"><a href="#">Образцы договоров</a></li>
+                            <li class="group-list__item"><a href="#">Вебинары</a></li>
+                            <li class="group-list__item"><a href="#">Условия сотрудничества</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-list footer-docs">
+                <a href="#" class="footer-docs__link">Пользовательское соглашение</a>
+                <a href="#" class="footer-docs__link">Политика конфиденциальности</a>
+                <a href="#" class="footer-docs__link">Разработка - Сайткрафт</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../../../node_modules/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./index.js" type="module"></script>
+</body>
+</html>

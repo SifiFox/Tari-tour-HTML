@@ -1,0 +1,83 @@
+.tourists-info {
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+}
+
+.tourist-data {
+  padding: 32px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--grayscale-06);
+  }
+}
+
+.order-action__people {
+  svg {
+    path {
+      stroke: var(--main-blue-01);
+    }
+  }
+}
+
+
+.order-action__body {
+  padding-top: 0;
+  color: var(--grayscale-02);
+
+  .order-details__title {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .docs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .doc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        color: var(--main-blue-01);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.ready-to-pay {
+  button {
+    background: #35B000;
+
+    svg {
+      path {
+        stroke: #FFF;
+      }
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        background: #49cf0f;
+      }
+    }
+  }
+}
+
+.booking-form__message {
+  width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .tourist-data {
+    padding: 24px;
+    button{
+      padding: 16px 0;
+    }
+  }
+  .order-info__title h3 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,236 @@
+ol {
+  margin: 0;
+}
+
+.info-banner {
+  background: url("../../../../public/info-paying.png") no-repeat top;
+  height: 355px;
+}
+.info-banner:after {
+  max-height: 355px;
+  background: rgba(0, 0, 0, 0.32);
+}
+.info-banner .tours-banner__title {
+  margin-bottom: 64px;
+}
+
+.stages {
+  position: relative;
+  z-index: 1;
+  margin-top: -136px;
+  margin-bottom: 76px;
+}
+
+.stages-wrapper {
+  max-width: 1280px;
+}
+
+.info-paying__stages {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.info-paying__stage {
+  max-width: 413px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 0 -4px 8px 0 rgba(31, 78, 141, 0.06), 0 32px 32px 0 rgba(21, 40, 66, 0.05);
+}
+
+.paying-stage__number {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 800;
+  border-radius: 12px;
+  background: var(--main-blue-01);
+}
+
+.paying-stage__title {
+  font-size: 24px;
+  color: var(--grayscale-02);
+  font-weight: 800;
+}
+
+.paying-stage__body {
+  font-size: 16px;
+}
+
+.howtopay {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 51px;
+}
+
+.howtopay-wrapper {
+  max-width: 1280px;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.howtopay-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.howtopay-aside {
+  max-width: 413px;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 32px 32px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: var(--main-000);
+  border-radius: 24px;
+}
+
+.howtopay-aside__icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-yellow-01);
+  border-radius: 12px;
+}
+
+.howtopay__title {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  color: #4F4F6F;
+  font-size: 34px;
+  font-weight: 700;
+  border-bottom: 2px solid var(--grayscale-06);
+}
+
+.info-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--grayscale-02);
+  margin-bottom: 24px;
+}
+
+.variant-stages {
+  padding-left: 18px;
+  color: var(--grayscale-02);
+}
+.variant-stages .variant-stage a {
+  text-decoration: none;
+  color: var(--main-blue-01);
+  font-weight: 600;
+}
+
+.howtopay-variants {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.howtopay-block {
+  max-width: 803px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.howtopay-block:not(:last-child) {
+  border-bottom: 2px solid var(--grayscale-06);
+}
+
+.howtopay-block__body p {
+  font-size: 14px;
+}
+
+.howtopay-block p {
+  font-size: 14px;
+  margin: 16px 0;
+}
+
+.howtopay-refund {
+  list-style: none;
+  counter-reset: refund-counter;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  gap: 16px;
+  position: relative;
+}
+.howtopay-refund::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 97%;
+  width: 2px;
+  background: var(--main-blue-01);
+  left: 25px;
+  z-index: -1;
+}
+.howtopay-refund li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  counter-increment: refund-counter;
+}
+.howtopay-refund li::before {
+  content: counter(refund-counter);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-weight: bold;
+  min-width: 32px;
+  max-width: 32px;
+  min-height: 32px;
+  max-height: 32px;
+  background: var(--main-blue-01);
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1280px) {
+  .howtopay__title {
+    font-size: 24px;
+  }
+  .info-title {
+    font-size: 20px;
+  }
+  .howtopay-top {
+    flex-direction: column;
+  }
+  .howtopay-block {
+    max-width: 100%;
+  }
+  .howtopay-aside {
+    max-width: 100%;
+    margin-bottom: 32px;
+    padding: 32px 16px 64px;
+  }
+  .howtopay-refund {
+    font-size: 14px;
+  }
+  .howtopay-refund li {
+    align-items: flex-start;
+  }
+  .howtopay-refund::before {
+    height: 85%;
+  }
+  .info-paying__stages {
+    padding: 0 16px;
+  }
+}
+
+/*# sourceMappingURL=info.css.map */

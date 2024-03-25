@@ -1,0 +1,9 @@
+@import 'mixins';
+
+// Base OpenSans:
+@include font-face("ProximaNova", "../../fonts/ProximaNova/ProximaNova-Light", 300);
+@include font-face("ProximaNova", "../../fonts/ProximaNova/ProximaNova-Regular", 400);
+@include font-face("ProximaNova", "../../fonts/ProximaNova/ProximaNova-Semibold", 600);
+@include font-face("ProximaNova", "../../fonts/ProximaNova/ProximaNova-Bold", 700);
+@include font-face("ProximaNova", "../../fonts/ProximaNova/ProximaNova-Extrabld", 800);
+@include font-face("ProximaNova", "../../fonts/ProximaNova/ProximaNova-Black", 900);

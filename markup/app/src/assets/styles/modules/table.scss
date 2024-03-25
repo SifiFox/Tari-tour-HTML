@@ -1,0 +1,159 @@
+.resp-tab {
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+}
+.resp-tab th, .resp-tab td {
+  padding: 10px 20px;
+  font-size: 14px;
+  vertical-align: top;
+}
+.resp-tab th,
+.resp-tab tr:not(:last-child){
+  border-bottom: 1px solid var(--grayscale-05);
+}
+
+
+.resp-tab th {
+  vertical-align: middle;
+
+  color: var(--grayscale-02);
+  background: var(--main-000);
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  svg{
+    width: 16px;
+    height: 16px;
+    path{
+      stroke: var(--grayscale-02);
+    }
+  }
+}
+.resp-tab .th-centred,
+.td-center{
+  text-align: center;
+}
+.resp-tab .th-right,
+.td-right{
+  text-align: right;
+  padding-right: 22px;
+}
+
+.resp-tab td{
+  vertical-align: middle;
+  font-size: 14px;
+  color: var(--grayscale-02);
+  height: 80px;
+  box-sizing: border-box;
+  a{
+    color: var(--main-blue-01);
+    font-weight: 600;
+  }
+}
+
+.th-centred p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.th-bold{
+  font-weight: 600;
+}
+
+
+.status{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  padding: 4px 9px;
+  color: #FFF;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 39px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  svg{
+    path{
+      stroke: #fff;
+    }
+  }
+}
+
+.status-success{
+  background: var(--main-green-01);
+}
+.status-reject{
+  background: var(--main-orange-01);
+}
+.status-wait{
+  background: var(--grayscale-04);
+}
+
+
+.orders-mobile{
+  display: none;
+  .order{
+    gap: 4px;
+  }
+}
+
+.bold{
+  font-weight: 600;
+}
+.order-row{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  .status{
+    margin-right: unset;
+  }
+
+  .order-number{
+    color: var(--main-blue-01);
+    font-size: 20px;
+  }
+}
+
+.order-title{
+  margin-bottom: 20px;
+}
+.order-row__value{
+  color: var(--grayscale-02);
+}
+
+.orders-mobile{
+  align-items: center;
+  background: #FFF;
+  .order{
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    &:nth-child(2n){
+      background: var(--main-000);
+    }
+  }
+
+}
+
+@media(max-width: 1016px) {
+  .resp-tab{
+    display: none;
+  }
+  .orders-wrapper{
+    background: none;
+    padding: 0;
+  }
+  .orders-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
