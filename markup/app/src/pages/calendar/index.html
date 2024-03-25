@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../assets/styles/modules/tours.css" >
     <link rel="stylesheet" href="../../assets/styles/modules/info.css" >
     <link rel="stylesheet" href="../../assets/styles/modules/contacts.css" >
+    <link rel="stylesheet" href="../../assets/styles/modules/calendar.css" >
     <title>Календарь автобусных туров</title>
 </head>
 <body>
@@ -248,7 +249,21 @@
                 <a href="#" class="breadcrumb">Календарь автобусных туров</a>
             </div>
             <h1 class="tours-banner__title">Календарь автобусных туров</h1>
-
+            <div class="calendar-select__wrapper">
+                <div class="booking-form__people booking-form__item">
+                    <img alt="" src="../../../public/calendar.svg">
+                    <div class="form-item__body">
+                        <div class="form-item__label">Даты тура</div>
+                        <label for="date-select"></label>
+                        <select id="date-select" class="form-item__select form-select">
+                            <option value="2">Все даты</option>
+                            <option value="3">25.03</option>
+                            <option value="2">24.03</option>
+                            <option value="1">23.03</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
             <div class="calendar-nav">
                 <div class="calendar-nav__item calendar-nav__item__active">
                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -373,8 +388,198 @@
 
     <div class="calendar">
         <div class="calendar-wrapper">
-            <div class="calendar-item"></div>
+            <div class="calendar-table__items">
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Начало</p>
+                    <div class="calendar-item__value"></div>
+                </div>
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Кол-во дней</p>
+                    <div class="calendar-item__value"></div>
+                </div>
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Окончание</p>
+                    <div class="calendar-item__value"></div>
+                </div>
+                <div class="calendar-table__item calendar-tour">
+                    <p class="calendar-item__title">Тур</p>
+                    <div class="calendar-item__value"></div>
+                </div>
+                <div class="calendar-table__item calendar-actions">
+                    <p class="calendar-item__title">Стоимость</p>
+                    <div class="calendar-item__value"></div>
+                </div>
+            </div>
+            <div class="calendar-table__items">
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Начало</p>
+                    <div class="calendar-item__value">02.01.2024</div>
+                </div>
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Кол-во дней</p>
+                    <div class="calendar-item__value">3 дня</div>
+                </div>
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Окончание</p>
+                    <div class="calendar-item__value">05.01.2024</div>
+                </div>
+                <div class="calendar-table__item calendar-tour">
+                    <p class="calendar-item__title">Тур</p>
+                    <div class="calendar-item__value">
+                        <p class="calendar-value__title">Москва: Рожденственская мозайка</p>
+                        <p class="calendar-value__subtitle">Москва</p>
+                    </div>
+                </div>
+                <div class="calendar-table__item calendar-actions">
+                    <p class="calendar-item__title">Стоимость</p>
+                    <div class="calendar-item__value">
+                        <p>9 550 <span>₽</span></p>
+                        <button class="button3">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar-table__items">
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Начало</p>
+                    <div class="calendar-item__value">02.01.2024</div>
+                </div>
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Кол-во дней</p>
+                    <div class="calendar-item__value">3 дня</div>
+                </div>
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Окончание</p>
+                    <div class="calendar-item__value">05.01.2024</div>
+                </div>
+                <div class="calendar-table__item calendar-tour">
+                    <p class="calendar-item__title">Тур</p>
+                    <div class="calendar-item__value">
+                        <p class="calendar-value__title">Его величество Ростов</p>
+                        <p class="calendar-value__subtitle">Россия</p>
+                    </div>
+                </div>
+                <div class="calendar-table__item calendar-actions">
+                    <p class="calendar-item__title">Стоимость</p>
+                    <div class="calendar-item__value">
+                        <p>9 550 <span>₽</span></p>
+                        <button class="button3">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar-table__items">
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Начало</p>
+                    <div class="calendar-item__value">02.01.2024</div>
+                </div>
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Кол-во дней</p>
+                    <div class="calendar-item__value">3 дня</div>
+                </div>
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Окончание</p>
+                    <div class="calendar-item__value">05.01.2024</div>
+                </div>
+                <div class="calendar-table__item calendar-tour">
+                    <p class="calendar-item__title">Тур</p>
+                    <div class="calendar-item__value">
+                        <p class="calendar-value__title">Его величество Ростов</p>
+                        <p class="calendar-value__subtitle">Россия</p>
+                    </div>
+                </div>
+                <div class="calendar-table__item calendar-actions">
+                    <p class="calendar-item__title">Стоимость</p>
+                    <div class="calendar-item__value">
+                        <p>9 550 <span>₽</span></p>
+                        <button class="button3">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar-table__items">
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Начало</p>
+                    <div class="calendar-item__value">02.01.2024</div>
+                </div>
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Кол-во дней</p>
+                    <div class="calendar-item__value">3 дня</div>
+                </div>
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Окончание</p>
+                    <div class="calendar-item__value">05.01.2024</div>
+                </div>
+                <div class="calendar-table__item calendar-tour">
+                    <p class="calendar-item__title">Тур</p>
+                    <div class="calendar-item__value">
+                        <p class="calendar-value__title">Его величество Ростов</p>
+                        <p class="calendar-value__subtitle">Россия</p>
+                    </div>
+                </div>
+                <div class="calendar-table__item calendar-actions">
+                    <p class="calendar-item__title">Стоимость</p>
+                    <div class="calendar-item__value">
+                        <p>9 550 <span>₽</span></p>
+                        <button class="button3">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar-table__items">
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Начало</p>
+                    <div class="calendar-item__value">02.01.2024</div>
+                </div>
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Кол-во дней</p>
+                    <div class="calendar-item__value">3 дня</div>
+                </div>
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Окончание</p>
+                    <div class="calendar-item__value">05.01.2024</div>
+                </div>
+                <div class="calendar-table__item calendar-tour">
+                    <p class="calendar-item__title">Тур</p>
+                    <div class="calendar-item__value">
+                        <p class="calendar-value__title">Его величество Ростов</p>
+                        <p class="calendar-value__subtitle">Россия</p>
+                    </div>
+                </div>
+                <div class="calendar-table__item calendar-actions">
+                    <p class="calendar-item__title">Стоимость</p>
+                    <div class="calendar-item__value">
+                        <p>9 550 <span>₽</span></p>
+                        <button class="button3">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar-table__items">
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Начало</p>
+                    <div class="calendar-item__value">02.01.2024</div>
+                </div>
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Кол-во дней</p>
+                    <div class="calendar-item__value">3 дня</div>
+                </div>
+                <div class="calendar-table__item centered">
+                    <p class="calendar-item__title">Окончание</p>
+                    <div class="calendar-item__value">05.01.2024</div>
+                </div>
+                <div class="calendar-table__item calendar-tour">
+                    <p class="calendar-item__title">Тур</p>
+                    <div class="calendar-item__value">
+                        <p class="calendar-value__title">Его величество Ростов</p>
+                        <p class="calendar-value__subtitle">Россия</p>
+                    </div>
+                </div>
+                <div class="calendar-table__item calendar-actions">
+                    <p class="calendar-item__title">Стоимость</p>
+                    <div class="calendar-item__value">
+                        <p>9 550 <span>₽</span></p>
+                        <button class="button3">Подробнее</button>
+                    </div>
+                </div>
+            </div>
         </div>
+        <button class="button button-outlined button-showmore"><b class="button3">Показать еще</b></button>
     </div>
 
     <div class="footer">
