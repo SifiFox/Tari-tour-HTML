@@ -1,5 +1,5 @@
+const cards = document.querySelectorAll('.tour-card')
 export const initSliders = () => {
-    const cards = document.querySelectorAll('.tour-card')
     cards.forEach(card => {
         const swiperContainer = card.querySelector('.card-image__image')
         const pagination = card.querySelector('.swiper-pagination')

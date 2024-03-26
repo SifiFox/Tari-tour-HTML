@@ -326,7 +326,9 @@
   max-width: 305px;
 }
 .requisites-docs button {
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 24px 32px;
   display: flex;
@@ -376,11 +378,13 @@
   background: #FFF;
   box-shadow: 0 -4px 8px 0 rgba(31, 78, 141, 0.06), 0 32px 32px 0 rgba(21, 40, 66, 0.05);
   max-width: 842px;
+  height: -moz-fit-content;
   height: fit-content;
   color: var(--grayscale-02);
 }
 .contacts-conditions__item .tours-button__filter {
   display: flex;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 24px 32px;
 }
@@ -713,6 +717,4 @@
     width: 100%;
     padding: 24px 0;
   }
-}
-
-/*# sourceMappingURL=contacts.css.map */
+}/*# sourceMappingURL=contacts.css.map */

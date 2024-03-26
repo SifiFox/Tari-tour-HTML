@@ -36,6 +36,7 @@
 
 .order-action {
   width: 413px;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -64,6 +65,7 @@
 }
 .order-action__footer button {
   width: 100%;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 16px 0;
 }
@@ -188,11 +190,13 @@
   margin-bottom: 24px;
 }
 .order-action__body .booking-form__item {
+  height: -moz-fit-content;
   height: fit-content;
   width: 100%;
   max-width: unset;
 }
 .order-action__body .form-item__input {
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -303,7 +307,8 @@
 .additional-item__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .additional-item__body {
@@ -357,6 +362,7 @@
   resize: vertical;
 }
 .additional-body__actions .booking-form__dates {
+  height: -moz-fit-content;
   height: fit-content;
   padding: 8px 16px;
   box-sizing: border-box;
@@ -576,7 +582,8 @@
     height: 122px;
   }
   .order-body__image img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .order-info__footer .info-footer__desc {
     margin-bottom: 12px;
@@ -614,6 +621,4 @@
     align-items: flex-start;
     padding: 16px;
   }
-}
-
-/*# sourceMappingURL=order.css.map */
+}/*# sourceMappingURL=order.css.map */

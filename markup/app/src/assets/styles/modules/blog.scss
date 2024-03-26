@@ -60,6 +60,10 @@
   box-sizing: border-box;
   height: fit-content;
 
+
+  .picture-full__close{
+    display: none;
+  }
   .themes-title{
     font-size: 32px;
     font-weight: 700;

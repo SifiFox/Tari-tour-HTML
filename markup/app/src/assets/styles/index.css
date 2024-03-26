@@ -451,6 +451,7 @@ p {
 .nav-mobile__footer .nav-mobile__button button {
   width: 100%;
   padding: 16px 0;
+  height: -moz-fit-content;
   height: fit-content;
 }
 .nav-mobile__footer .nav-mobile__button button b {
@@ -493,7 +494,8 @@ p {
 }
 
 .banner-image {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -734,7 +736,8 @@ p {
   height: 153px;
   position: absolute;
   margin: 0 !important;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   mix-blend-mode: normal;
 }
 
@@ -754,6 +757,7 @@ p {
   align-items: center;
   justify-content: center;
   padding: var(--padding-base) var(--padding-29xl);
+  width: -moz-fit-content;
   width: fit-content;
   height: 66px;
   border: 0;
@@ -1103,6 +1107,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: -moz-fit-content !important;
   width: fit-content !important;
   box-sizing: border-box;
   padding: 24px;
@@ -1289,7 +1294,8 @@ p {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 18px;
 }
 .cert-image .cert-image__title {
@@ -1374,7 +1380,8 @@ p {
   cursor: pointer;
 }
 .socials-link__image img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .socials-link__title {
@@ -1413,7 +1420,8 @@ p {
   border-radius: 24px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   box-sizing: border-box;
 }
 .gallery .swiper {
@@ -1544,6 +1552,7 @@ p {
   flex-direction: column;
   width: 846px;
   padding: 64px;
+  height: -moz-fit-content;
   height: fit-content;
   box-sizing: border-box;
   border-radius: 33px;
@@ -1621,7 +1630,8 @@ p {
   display: flex;
 }
 .support-image img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0 32px 32px 0;
 }
 
@@ -1654,7 +1664,8 @@ p {
 .support-form {
   display: grid;
   row-gap: 16px;
-  column-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 
 .support-textarea {
@@ -1895,7 +1906,8 @@ p {
     max-width: 60%;
   }
   .support-image img {
-    object-fit: fill;
+    -o-object-fit: fill;
+       object-fit: fill;
   }
   .support-form .input-block:nth-child(2) {
     grid-row: 2/2;
@@ -2096,7 +2108,8 @@ p {
   .popular-tours__card .card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 24px;
   }
   .popular-tours__card .card-body {
@@ -2297,6 +2310,4 @@ p {
   .header-mobile {
     display: none;
   }
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

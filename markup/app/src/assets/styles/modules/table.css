@@ -79,6 +79,7 @@
   font-weight: 600;
   text-transform: capitalize;
   border-radius: 39px;
+  width: -moz-fit-content;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -157,6 +158,4 @@
     flex-direction: column;
     gap: 32px;
   }
-}
-
-/*# sourceMappingURL=table.css.map */
+}/*# sourceMappingURL=table.css.map */
