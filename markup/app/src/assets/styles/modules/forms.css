@@ -8,7 +8,6 @@
   gap: 0;
 }
 .auth-wrapper .header-wrapper {
-  height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 0;
 }
@@ -247,4 +246,6 @@ input[type=number] {
     background: url("../../../../public/regauth__bg__mobile.png") no-repeat;
     background-size: cover;
   }
-}/*# sourceMappingURL=forms.css.map */
+}
+
+/*# sourceMappingURL=forms.css.map */

@@ -89,9 +89,7 @@
 
 .profile-button {
   padding: 12px 24px;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -144,4 +142,6 @@
   .profile-button {
     width: 100%;
   }
-}/*# sourceMappingURL=profile.css.map */
+}
+
+/*# sourceMappingURL=profile.css.map */

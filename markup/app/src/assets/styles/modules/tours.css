@@ -331,7 +331,6 @@
   padding-left: 24px;
   background: #FFF;
   border-radius: 24px 0 24px 0;
-  width: -moz-fit-content;
   width: fit-content;
   margin-left: auto;
   box-sizing: border-box;
@@ -352,9 +351,7 @@
 
 .card-action__button {
   padding: 16px 24px 16px 32px;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   border-radius: 24px 0 24px 0;
 }
@@ -587,8 +584,7 @@
     max-width: 100%;
   }
   .slide img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .tour-card-link {
     color: var(--grayscale-03);
@@ -636,4 +632,6 @@
   .card-image__wrapper .slide img {
     width: 100%;
   }
-}/*# sourceMappingURL=tours.css.map */
+}
+
+/*# sourceMappingURL=tours.css.map */
