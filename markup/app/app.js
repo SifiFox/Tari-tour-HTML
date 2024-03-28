@@ -1,7 +1,11 @@
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('test')
+})
+
 import {initBurger} from "./src/scripts/modules/burger/burger.js";
 import {initCalendar} from "./src/scripts/modules/calendar/calendar.js";
 import {initSliders} from "./src/scripts/modules/card-slider/card-slider.js";
-
 
 const inputsHidden = document.querySelectorAll('.form__item__hidden')
 const calendars = document.querySelectorAll("input[value][type='date']")
@@ -68,7 +72,7 @@ export function initAllData() {
     }))
 
     if(programTitles.length > 0){
-        programTitles.forEach(title => title.addEventListener('click', (e) => toggleData(e)))
+        programTitles.forEach(title => title.addEventListener('click', (e) => toggleData(e, 'order-program__item__active')))
     }
 
     if(bannerWrapper){

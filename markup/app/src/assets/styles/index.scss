@@ -910,13 +910,13 @@ p{
 }
 
 .popular-wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 1280px;
+  //display: flex;
+  //align-items: center;
+  //flex-direction: column;
+  //justify-content: flex-start;
   gap: var(--gap-13xl);
   max-width: 100%;
+  width: 1280px;
 }
 
 .popular-head {

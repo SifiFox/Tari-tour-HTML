@@ -1,4 +1,4 @@
-import VanillaCalendar from "../../../../../node_modules/vanilla-calendar-pro/build/vanilla-calendar.min.mjs";
+// import VanillaCalendar from "../../libs/vanilla-calendar-pro";
 export function initCalendar(container){
     const options = {
         input: true,
