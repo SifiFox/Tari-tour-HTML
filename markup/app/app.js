@@ -8,7 +8,8 @@ import {initCalendar} from "./src/scripts/modules/calendar/calendar.js";
 import {initSliders} from "./src/scripts/modules/card-slider/card-slider.js";
 
 const inputsHidden = document.querySelectorAll('.form__item__hidden')
-const calendars = document.querySelectorAll("input[value][type='date']")
+// const calendars = document.querySelectorAll("input[value][type='date']")
+const calendars = document.querySelectorAll(".form-item__calendar")
 const controlsTop = document.querySelectorAll('.control-top')
 const controlsDown = document.querySelectorAll('.control-down')
 const programTitles = document.querySelectorAll('.order-program__body__title')
@@ -230,3 +231,29 @@ function showInnerFilterData(item) {
     }
 }
 
+
+
+
+// Date mask
+calendars.forEach(calendar => {
+    dateInputMask(calendar);
+})
+function dateInputMask(elm) {
+    elm.addEventListener('keypress', function(e) {
+        if(e.keyCode < 47 || e.keyCode > 57) {
+            e.preventDefault();
+        }
+        var len = elm.value.length;
+        if(len !== 1 || len !== 3) {
+            if(e.keyCode == 47) {
+                e.preventDefault();
+            }
+        }
+        if(len === 2) {
+            elm.value += '-';
+        }
+        if(len === 5) {
+            elm.value += '-';
+        }
+    });
+}

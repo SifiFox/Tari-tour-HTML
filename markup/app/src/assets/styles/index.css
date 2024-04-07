@@ -46,6 +46,10 @@ p {
   transform: rotate(180deg);
 }
 
+input[type=date]::-moz-focus-inner {
+  border: 0;
+}
+
 .option {
   padding: 14px;
 }
