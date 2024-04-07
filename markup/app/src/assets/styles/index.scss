@@ -47,6 +47,8 @@ p{
   }
 }
 
+
+
 .option{
   padding: 14px;
 }
@@ -129,7 +131,7 @@ p{
   
   @media (hover: hover) {
       &:hover{
-        background: #eaeaea;
+        background: #f8f8f8;
       }
   }
 }
@@ -216,7 +218,7 @@ p{
 
   @media (hover: hover) {
     &:hover{
-      background: #f1f1f1;
+      background: rgba(47, 128, 237, 0.2);
     }
   }
 }
@@ -746,7 +748,7 @@ p{
   cursor: pointer;
 }
 .form-tab__active {
-  border-radius: 0 var(--br-5xl) 0 0;
+  border-radius: var(--br-5xl) var(--br-5xl) 0 0;
   background-color: var(--color-white);
   white-space: nowrap;
   color: #000;
@@ -822,6 +824,7 @@ p{
   color: var(--grayscale-04);
   text-align: left;
 }
+
 .form-item__input {
   @include size(100%, 20px);
   border: 0;
@@ -910,13 +913,14 @@ p{
 }
 
 .popular-wrapper {
-  //display: flex;
-  //align-items: center;
-  //flex-direction: column;
-  //justify-content: flex-start;
-  gap: var(--gap-13xl);
   max-width: 100%;
   width: 1280px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  .button-showmore{
+    align-self: center;
+  }
 }
 
 .popular-head {
@@ -931,7 +935,7 @@ p{
   gap: var(--gap-base);
   max-width: 100%;
   font-size: var(--font-size-21xl);
-
+  margin-bottom: 32px;
 }
 
 .popular-head__title {
@@ -1695,6 +1699,7 @@ p{
 
 .subscribe-heading3 {
   color: var(--main-blue-01);
+  font-weight: 600;
   font-size: 32px;
 }
 
@@ -1709,12 +1714,13 @@ p{
 
 .footer-subscribe{
   display: flex;
-  max-width: 1280px;
+  max-width: calc(100% - 128px);
   width: 100%;
-  justify-content: space-between;
+  margin: 0 64px;
+  justify-content: center;
   border-radius: 60px 60px 0 0;
   background: #F2F8FF;
-  padding: 32px 256px;
+  padding: 32px;
   align-items: center;
 }
 
@@ -1722,6 +1728,9 @@ p{
   display: flex;
   gap: 16px;
   max-height: 64px;
+  .input-block{
+    width: 425px;
+  }
 }
 .subscribe-title{
   p{

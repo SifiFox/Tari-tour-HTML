@@ -41,6 +41,18 @@ const buttonFilter = document.querySelector('.button-filter')
 const themesWrapper = document.querySelector('.themes-wrapper')
 const closeBtn = document.querySelector('.picture-full__close')
 
+const formTabs = document.querySelectorAll('.form-tab')
+
+
+formTabs.forEach(tab => {tab.addEventListener('click', (e) => changeFormTabActive(e))})
+
+
+function changeFormTabActive(e){
+    const activeTab = document.querySelector('.form-tab__active')
+    activeTab.classList.remove('form-tab__active')
+    e.target.classList.toggle('form-tab__active')
+}
+
 let windowWidth = window.innerWidth
 window.addEventListener('resize', () => {
     windowWidth = window.innerWidth

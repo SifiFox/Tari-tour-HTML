@@ -1,7 +1,8 @@
 .tours-banner {
   width: 100%;
-  background: url("../../../../public/tours-moscow__main.png");
   position: relative;
+  background: url("../../../../public/tours-moscow__main.png") no-repeat;
+  background-size: cover;
 }
 .tours-banner:after {
   content: "";
@@ -220,7 +221,7 @@
 .tours-cards {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
 }
 
 .tour-card {
@@ -240,7 +241,7 @@
 }
 
 .card-image__wrapper {
-  width: 340px;
+  width: 418px;
   height: 100%;
   position: relative;
 }
@@ -259,6 +260,10 @@
   display: flex;
   height: 100%;
   border-radius: 24px;
+}
+
+.image__wrapper__square {
+  width: 340px;
 }
 
 .tour-card__desc {
@@ -318,7 +323,7 @@
 
 .tour-card-link {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: underline;
   color: var(--main-blue-01);
 }
@@ -371,6 +376,7 @@
 
 .tours-info__item {
   display: flex;
+  gap: 18px;
 }
 
 .tours-info__desc {
@@ -482,6 +488,13 @@
 }
 
 @media screen and (max-width: 1153px) {
+  .tours-banner {
+    background-size: auto 280px;
+    background-position: 32% 0;
+  }
+  .tours-banner:after {
+    height: 280px;
+  }
   .tours-cards {
     gap: 32px;
   }
@@ -616,14 +629,6 @@
   .tours-form__button {
     width: 100%;
     padding: 16px 0;
-  }
-  .tours-banner {
-    background-repeat: no-repeat;
-    background-size: 380%;
-    background-position: 32% 0;
-  }
-  .tours-banner:after {
-    height: 280px;
   }
   .card-image__wrapper {
     width: 100%;
