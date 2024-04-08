@@ -4,7 +4,6 @@ export function initCalendar(container){
         input: true,
         actions: {
             changeToInput(e, self) {
-                console.log(self)
                 if (!self.HTMLInputElement) return;
                 if (self.selectedDates[0]) {
                     self.HTMLInputElement.value = self.selectedDates[0];

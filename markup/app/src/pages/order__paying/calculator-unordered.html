@@ -307,9 +307,10 @@
                                     <label for="tour-dates_before" class="form-item__label">Даты тура</label>
                                     <input
                                             id="tour-dates_before"
-                                            class="form-item__input"
+                                            class="form-item__input form-item__calendar"
                                             value="2018-07-22"
-                                            type="date">
+                                            maxlength="10"
+                                            type="text">
                                 </div>
                                 <img alt="" src="../../../public/calendar.svg" >
                             </div>
@@ -318,9 +319,10 @@
                                     <label for="tour-dates__after" class="form-item__label">Даты тура</label>
                                     <input
                                             id="tour-dates__after"
-                                            class="form-item__input"
+                                            class="form-item__input form-item__calendar"
                                             value="2018-07-22"
-                                            type="date">
+                                            maxlength="10"
+                                            type="text">
                                 </div>
                                 <img alt="" src="../../../public/calendar.svg" >
                             </div>
@@ -405,9 +407,10 @@
                                             <label for="date" class="form-item__label">Выбрать день</label>
                                             <input
                                                     id="date"
-                                                    class="form-item__input"
+                                                    class="form-item__input form-item__calendar"
                                                     value="2018-07-22"
-                                                    type="date">
+                                                    maxlength="10"
+                                                    type="text">
                                         </div>
                                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35742 5.33325C3.35742 4.22868 4.25285 3.33325 5.35742 3.33325H16.3574C17.462 3.33325 18.3574 4.22868 18.3574 5.33325V16.3333C18.3574 17.4378 17.462 18.3333 16.3574 18.3333H5.35742C4.25285 18.3333 3.35742 17.4378 3.35742 16.3333V5.33325Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -417,8 +420,8 @@
                                         </svg>
                                     </div>
                                     <button class="button-primary button-additional">
-                                        <p class="button-additional__title">Добавить</p>
-                                        <p class="button-additional__value">+1 950 <span>₽</span></p>
+                                        <span class="button-additional__title">Добавить</span>
+                                        <span class="button-additional__value">+1 950 <span>₽</span></span>
                                     </button>
                                 </div>
                             </div>
@@ -450,9 +453,10 @@
                                             <label for="date2" class="form-item__label">Выбрать день</label>
                                             <input
                                                     id="date2"
-                                                    class="form-item__input"
+                                                    class="form-item__input form-item__calendar"
                                                     value="2018-07-22"
-                                                    type="date">
+                                                    maxlength="10"
+                                                    type="text">
                                         </div>
                                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35742 5.33325C3.35742 4.22868 4.25285 3.33325 5.35742 3.33325H16.3574C17.462 3.33325 18.3574 4.22868 18.3574 5.33325V16.3333C18.3574 17.4378 17.462 18.3333 16.3574 18.3333H5.35742C4.25285 18.3333 3.35742 17.4378 3.35742 16.3333V5.33325Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -462,10 +466,10 @@
                                         </svg>
                                     </div>
                                     <button class="button-primary button-additional__added">
-                                        <p>
+                                        <span>
                                             <img src="../../../public/check.svg" alt="">
                                             Добавить
-                                        </p>
+                                        </span>
                                     </button>
                                 </div>
                             </div>
@@ -497,9 +501,10 @@
                                             <label for="date3" class="form-item__label">Выбрать день</label>
                                             <input
                                                     id="date3"
-                                                    class="form-item__input"
+                                                    class="form-item__input form-item__calendar"
                                                     value="2018-07-22"
-                                                    type="date">
+                                                    maxlength="10"
+                                                    type="text">
                                         </div>
                                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35742 5.33325C3.35742 4.22868 4.25285 3.33325 5.35742 3.33325H16.3574C17.462 3.33325 18.3574 4.22868 18.3574 5.33325V16.3333C18.3574 17.4378 17.462 18.3333 16.3574 18.3333H5.35742C4.25285 18.3333 3.35742 17.4378 3.35742 16.3333V5.33325Z" stroke="#A0A3BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -509,10 +514,10 @@
                                         </svg>
                                     </div>
                                     <button class="button-primary button-additional__added">
-                                        <p>
+                                        <span>
                                             <img src="../../../public/check.svg" alt="">
                                             Добавить
-                                        </p>
+                                        </span>
                                     </button>
                                 </div>
                             </div>
@@ -613,7 +618,7 @@
                     </div>
                 </div>
                 <div class="order-action__body">
-                    <form action="">
+                    <form>
                         <div class="booking-form__dates booking-form__item">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7268 8.94004L8.94683 13.72C8.69674 13.9704 8.35738 14.1111 8.0035 14.1111C7.64962 14.1111 7.31025 13.9704 7.06016 13.72L1.3335 8.00004V1.33337H8.00016L13.7268 7.06004C14.2438 7.58009 14.2438 8.41999 13.7268 8.94004Z" stroke="#4E4B66" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
