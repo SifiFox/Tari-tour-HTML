@@ -2143,6 +2143,8 @@ input[type=date]::-moz-focus-inner {
     width: 90vw;
     height: 318px;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .cert-images__wrapper {
     height: 100%;
@@ -2154,13 +2156,13 @@ input[type=date]::-moz-focus-inner {
     height: 300px;
   }
   .cert-image__left {
-    transform: translate(-105%, 44%) rotate(-9deg);
+    transform: translate(-91%, 44%) rotate(-9deg);
   }
   .cert-image__center {
-    transform: translate(-77%, 42%) rotate(5deg) scale(1.11);
+    transform: translate(-66%, 42%) rotate(5deg) scale(1.11);
   }
   .cert-image__right {
-    transform: translate(-51%, 54%) rotate(19deg) scale(1);
+    transform: translate(-47%, 54%) rotate(19deg) scale(1);
   }
   .button-cert {
     margin-top: 390px;
