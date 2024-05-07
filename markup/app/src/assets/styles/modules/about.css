@@ -109,6 +109,10 @@
   min-height: 460px;
   margin-bottom: 156px;
 }
+.about-whyus .about-whyus__desc {
+  max-width: 303px;
+  color: var(--grayscale-02);
+}
 
 .about-whyus__images {
   position: absolute;
@@ -121,11 +125,6 @@
 .about-whyus__images__row {
   display: flex;
   gap: 20px;
-}
-
-.about-whyus__desc {
-  max-width: 303px;
-  color: var(--grayscale-02);
 }
 
 .about-whyus__title {

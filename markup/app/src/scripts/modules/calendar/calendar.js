@@ -1,4 +1,3 @@
-// import VanillaCalendar from "../../libs/vanilla-calendar-pro";
 export function initCalendar(container){
     const options = {
         input: true,
@@ -6,10 +5,10 @@ export function initCalendar(container){
             changeToInput(e, self) {
                 if (!self.HTMLInputElement) return;
                 if (self.selectedDates[0]) {
-                    self.HTMLInputElement.value = self.selectedDates[0];
+                    self.HTMLInputElement.querySelector('.form-item__calendar').value = self.selectedDates[0];
                     self.hide();
                 } else {
-                    self.HTMLInputElement.value = '';
+                    self.HTMLInputElement.querySelector('.form-item__calendar').value = '';
                 }
             },
         },

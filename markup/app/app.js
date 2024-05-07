@@ -1,11 +1,11 @@
-
 import {initBurger} from "./src/scripts/modules/burger/burger.js";
 import {initCalendar} from "./src/scripts/modules/calendar/calendar.js";
 import {initSliders} from "./src/scripts/modules/card-slider/card-slider.js";
+import {bannerTitles} from './src/scripts/data/main-page/banner-title.js'
 
 const inputsHidden = document.querySelectorAll('.form__item__hidden')
-// const calendars = document.querySelectorAll("input[value][type='date']")
-const calendars = document.querySelectorAll(".form-item__calendar")
+// const calendars = document.querySelectorAll(".form-item__calendar")
+const calendars = document.querySelectorAll(".booking-form__dates")
 const controlsTop = document.querySelectorAll('.control-top')
 const controlsDown = document.querySelectorAll('.control-down')
 const programTitles = document.querySelectorAll('.order-program__body__title')
@@ -39,10 +39,29 @@ const themesWrapper = document.querySelector('.themes-wrapper')
 const closeBtn = document.querySelector('.picture-full__close')
 
 const formTabs = document.querySelectorAll('.form-tab')
+const footerTitles = document.querySelectorAll('.footer-body__title')
+
+const mobileNavTitles = document.querySelectorAll('.nav-item__title')
+const desktopNavTitles = document.querySelectorAll('.header-menu-item')
 
 
 formTabs.forEach(tab => {tab.addEventListener('click', (e) => changeFormTabActive(e))})
 
+const popularWrapper = document.querySelector('.popular-wrapper')
+
+
+
+
+function showThreeMore(wrapper, elementClass, hiddenClass, count){
+    const elements = wrapper.querySelectorAll(`.${elementClass}`)
+    let counter = 0
+    elements.forEach(el => {
+        if(el.classList.contains(hiddenClass) && counter < count){
+            el.classList.remove(hiddenClass)
+            counter++;
+        }
+    })
+}
 
 function changeFormTabActive(e){
     const activeTab = document.querySelector('.form-tab__active')
@@ -55,9 +74,33 @@ window.addEventListener('resize', () => {
     windowWidth = window.innerWidth
 })
 
+
+
 export function initAllData() {
     initBurger()
     initSliders()
+
+    desktopNavTitles.forEach(item => {
+        item.addEventListener('click', (e) => {
+            const activeItem = document.querySelector('.header-menu-item__active')
+            if(activeItem){
+                activeItem.classList.remove('header-menu-item__active')
+                e.currentTarget.classList.add('header-menu-item__active')
+            }else{
+                e.currentTarget.classList.add('header-menu-item__active')
+            }
+            if(activeItem === e.currentTarget){
+                e.currentTarget.classList.toggle('header-menu-item__active')
+            }
+        })
+    })
+
+    mobileNavTitles.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.currentTarget.closest('.nav-mobile__item').classList.toggle('nav-mobile__item__active')
+        })
+    })
+
     if(calendars.length > 0){
         calendars.forEach(item => {
             initCalendar(item)
@@ -140,6 +183,12 @@ export function initAllData() {
         })
     }
 
+    footerTitles.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.currentTarget.classList.toggle('footer-body__title__opened')
+        })
+    })
+
     if(sortPrice){
         sortPrice.addEventListener('click', (e) => toggleSortType(e))
         sortPopular.addEventListener('click', (e) => toggleSortType(e))
@@ -160,9 +209,36 @@ export function initAllData() {
         buttonFilter.addEventListener('click', toggleActiveFilters)
         closeBtn.addEventListener('click', toggleActiveFilters)
     }
+
+
+    const popularShowmore = popularWrapper.querySelector('.button-showmore')
+    if(popularShowmore){
+        popularShowmore.addEventListener('click', () => showThreeMore(popularWrapper, 'tour-card', 'removed', 3))
+    }
+
+    const bannerSelectTitle = document.querySelector('.banner-title__option')
+    bannerSelectTitle.addEventListener('click', (e) => toggleBannerTitleSelect(e))
 }
 
 initAllData()
+
+function toggleBannerTitleSelect(e) {
+    const bannerTitle = e.currentTarget
+    const options = e.currentTarget.parentNode.querySelector('.banner-title__select')
+    options.classList.toggle('banner-title__select__active')
+    options.innerHTML = ''
+    bannerTitles.forEach(item => {
+        const option = document.createElement('p')
+        option.classList.add('banner-title__select__option')
+        option.innerText = item.name
+        options.append(option)
+        option.addEventListener('click', () => {
+            const titleValue = bannerTitle.querySelector('.h1-b')
+            titleValue.innerHTML = item.value
+            options.classList.toggle('banner-title__select__active')
+        })
+    })
+}
 
 function toggleActiveFilters(){
     themesWrapper.classList.toggle('themes__active__wrapper')

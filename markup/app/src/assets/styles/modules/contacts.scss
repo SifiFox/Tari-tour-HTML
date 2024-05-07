@@ -16,7 +16,7 @@
   &-wrapper{
     display: flex;
     justify-content: center;
-    max-width: 1280px;
+
   }
 }
 
@@ -26,11 +26,29 @@
 }
 
 .contacts-wrapper{
-  max-width: 1280px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  & > div:not(.contacts-requisites__wrapper), section {
+    max-width: 1280px;
+  }
 }
+
+
+.contacts-requisites__wrapper{
+  max-width: 100%;
+  width: 100%;
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  background: var(--main-000);
+  margin-bottom: 80px;
+  .contacts-requisites{
+    margin-bottom: 0;
+  }
+}
+
 .contact{
   display: flex;
   justify-content: space-between;
@@ -200,7 +218,6 @@
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  padding: 0 20px;
   position: relative;
 }
 
@@ -277,18 +294,19 @@
 
 .contacts-requisites{
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 80px 20px;
+  position: relative;
 }
 
 .requisites-wrapper{
   box-shadow: 0 -4px 8px 0 rgba(31, 78, 141, 0.06), 0 32px 32px 0 rgba(21, 40, 66, 0.05);
+  background: #FFFFFF;
   border-radius: 12px;
   display: flex;
   justify-content: space-between;
   color: var(--grayscale-02);
   width: 100%;
   padding: 32px;
-
 }
 
 .requisites-docs__label{
@@ -761,11 +779,17 @@
     padding: 0;
   }
 
+
+  .contacts-requisites__wrapper{
+    padding-top: 64px;
+    padding-bottom: 48px;
+  }
   .requisites-wrapper{
     box-sizing: border-box;
-    padding: 20px;
     flex-direction: column;
     gap: 48px;
+    padding: 20px;
+    max-width: 90vw;
   }
   .requisites-table{
     td{

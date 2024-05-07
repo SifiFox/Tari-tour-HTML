@@ -119,6 +119,10 @@
   position: relative;
   min-height: 460px;
   margin-bottom: 156px;
+  .about-whyus__desc {
+    max-width: 303px;
+    color: var(--grayscale-02);
+  }
 }
 
 .about-whyus__images {
@@ -134,10 +138,7 @@
   gap: 20px;
 }
 
-.about-whyus__desc {
-  max-width: 303px;
-  color: var(--grayscale-02);
-}
+
 
 .about-whyus__title {
   font-size: 32px;
