@@ -18,4 +18,4 @@ pages:
 [orders-profile](https://sififox.github.io/Tari-tour-HTML/markup/app/src/pages/profile/orders-profile) \
 [user-profile](https://sififox.github.io/Tari-tour-HTML/markup/app/src/pages/profile/user-profile) \
 [register](https://sififox.github.io/Tari-tour-HTML/markup/app/src/pages/register/) \
-[reset-password](https://sififox.github.io/Tari-tour-HTML/markup/app/src/pages/reset-password/) \
+[reset-password](https://sififox.github.io/Tari-tour-HTML/markup/app/src/pages/reset-password/)
