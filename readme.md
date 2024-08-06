@@ -1,5 +1,5 @@
 TariTour markup
-pages: 
+pages: \
 [about](https://sififox.github.io/Tari-tour-HTML/markup/app/src/pages/about/) \
 [auth](https://sififox.github.io/Tari-tour-HTML/markup/app/src/pages/auth/) \
 [blog](https://sififox.github.io/Tari-tour-HTML/markup/app/src/pages/main/) \
